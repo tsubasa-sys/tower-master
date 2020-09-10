@@ -1,0 +1,209 @@
+"C:/Program Files/Coverity/Coverity Static Analysis/bin/cov-security-da.exe" --dir C:/Users/tsubasa/Downloads/tower-master/idir 
+cov-security-da version 2020.06 on Windows 10 Professional, 64-bit (build 18363)
+Internal version numbers: 6fbf2d48ad p-trail-push-1389
+
+da: Creating symbols took 5063 ms.
+da: Found 226 Java methods to analyze
+bytecode_dump: Name collision: C:/Users/tsubasa/Downloads/tower-master/app/build/generated/source/buildConfig/release/truewatcher/tower/BuildConfig.java will be skipped since compiler output (truewatcher/tower/BuildConfig.class) already seen from C:/Users/tsubasa/Downloads/tower-master/app/build/generated/source/buildConfig/debug/truewatcher/tower/BuildConfig.java
+da: C:\Program Files\Coverity\Coverity Static Analysis\jdk11\bin\java.exe -Xmx1024m -classpath C:\Program Files\Coverity\Coverity Static Analysis\jars\java-security-da.jar -Dcoverity.stdin=C:\Users\tsubasa\Downloads\tower-master\idir\tmp\java-security-da-whitelist.dat -Dcoverity.killupdatesocket.port=50709 com.coverity.security.da.BatchMain C:\Users\tsubasa\Downloads\tower-master\idir\tmp\java-security-da-input.dat C:\Users\tsubasa\Downloads\tower-master\idir\tmp\java-security-da-output.dat xss C:\Users\tsubasa\Downloads\tower-master\idir\tmp\java-security-da-classpath.txt
+da: JAVA DA time: 1359 ms
+da: === BEGIN Appending C:/Users/tsubasa/Downloads/tower-master/idir/tmp/java-security-da-debug.txt ===
+da: << android.support.v4.app.AppOpsManagerCompat.permissionToOp(java.lang.String)java.lang.String
+da: Method only returns null or throws exception. This is too suspicious to return a model.
+da: << android.support.v4.text.BidiFormatter.unicodeWrap(java.lang.String)java.lang.String
+da: java.lang.NoSuchMethodException: android.support.v4.text.BidiFormatter.<init>()
+da: 	at java.base/java.lang.Class.getConstructor0(Class.java:3349)
+da: 	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2553)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:302)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: << android.support.v4.text.ICUCompat.getScript(java.lang.String)java.lang.String
+da: java.lang.ExceptionInInitializerError
+da: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+da: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+da: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+da: 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+da: 	at com.coverity.security.da.SandboxManager$1$1.run(SandboxManager.java:315)
+da: 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:320)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: Caused by: java.lang.RuntimeException: Stub!
+da: 	at android.util.Log.w(Log.java:156)
+da: 	at android.support.v4.text.ICUCompat.<clinit>(ICUCompat.java:58)
+da: 	... 9 more
+da: << android.support.v4.text.util.FindAddress.findAddress(java.lang.String)java.lang.String
+da: Method only returns null or throws exception. This is too suspicious to return a model.
+da: << android.support.v4.text.util.LinkifyCompat.findAddress(java.lang.String)java.lang.String
+da: Method only returns null or throws exception. This is too suspicious to return a model.
+da: << android.support.v7.preference.Preference.getPersistedString(java.lang.String)java.lang.String
+da: java.lang.NoSuchMethodException: android.support.v7.preference.Preference.<init>()
+da: 	at java.base/java.lang.Class.getConstructor0(Class.java:3349)
+da: 	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2553)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:302)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: << truewatcher.tower.EditPointActivity$EditPointFragment$Viewer.ne(java.lang.String)java.lang.String
+da: java.lang.NoSuchMethodException: truewatcher.tower.EditPointActivity$EditPointFragment$Viewer.<init>()
+da: 	at java.base/java.lang.Class.getConstructor0(Class.java:3349)
+da: 	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2553)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:302)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: << truewatcher.tower.GpxHelper.csv2gpx(java.lang.String)java.lang.String
+da: java.lang.RuntimeException: Stub!
+da: 	at android.util.ArrayMap.<init>(ArrayMap.java:55)
+da: 	at truewatcher.tower.GpxHelper.<init>(GpxHelper.java:320)
+da: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+da: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+da: 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+da: 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:308)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: << truewatcher.tower.GpxHelper.getSym(java.lang.String)java.lang.String
+da: java.lang.RuntimeException: Stub!
+da: 	at android.util.ArrayMap.<init>(ArrayMap.java:55)
+da: 	at truewatcher.tower.GpxHelper.<init>(GpxHelper.java:320)
+da: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+da: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+da: 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+da: 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:308)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: << truewatcher.tower.GpxHelper.gpx2csv(java.lang.String)java.lang.String
+da: java.lang.RuntimeException: Stub!
+da: 	at android.util.ArrayMap.<init>(ArrayMap.java:55)
+da: 	at truewatcher.tower.GpxHelper.<init>(GpxHelper.java:320)
+da: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+da: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+da: 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+da: 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:308)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: << truewatcher.tower.GpxHelper.track2latLonJson(java.lang.String)java.lang.String
+da: java.lang.RuntimeException: Stub!
+da: 	at android.util.ArrayMap.<init>(ArrayMap.java:55)
+da: 	at truewatcher.tower.GpxHelper.<init>(GpxHelper.java:320)
+da: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+da: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+da: 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+da: 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:308)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: << truewatcher.tower.MapViewer.choosePage(java.lang.String)java.lang.String
+da: java.lang.NoSuchMethodException: truewatcher.tower.MapViewer.<init>()
+da: 	at java.base/java.lang.Class.getConstructor0(Class.java:3349)
+da: 	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2553)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:302)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: << truewatcher.tower.MyRegistry.get(java.lang.String)java.lang.String
+da: java.lang.NullPointerException
+da: 	at truewatcher.tower.MyRegistry.get(MyRegistry.java:42)
+da: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+da: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+da: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+da: 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+da: 	at com.coverity.security.da.SandboxManager$1$1.run(SandboxManager.java:315)
+da: 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:320)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: << truewatcher.tower.MyRegistry.getScrambled(java.lang.String)java.lang.String
+da: java.lang.NullPointerException
+da: 	at truewatcher.tower.MyRegistry.getScrambled(MyRegistry.java:58)
+da: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+da: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+da: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+da: 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+da: 	at com.coverity.security.da.SandboxManager$1$1.run(SandboxManager.java:315)
+da: 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:320)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: << truewatcher.tower.TrackStorage$Track2LatLonJSON.csv2LatLonJSON(java.lang.String)java.lang.String
+da: java.lang.NoSuchMethodException: truewatcher.tower.TrackStorage$Track2LatLonJSON.<init>()
+da: 	at java.base/java.lang.Class.getConstructor0(Class.java:3349)
+da: 	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2553)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:302)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: << truewatcher.tower.TrackStorage$Track2LatLonJSON.file2LatLonJSON(java.lang.String)java.lang.String
+da: java.lang.NoSuchMethodException: truewatcher.tower.TrackStorage$Track2LatLonJSON.<init>()
+da: 	at java.base/java.lang.Class.getConstructor0(Class.java:3349)
+da: 	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2553)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:302)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: << truewatcher.tower.TrackStorage.deleteLastSegmentString(java.lang.String)java.lang.String
+da: java.lang.RuntimeException: Stub!
+da: 	at org.json.JSONObject.<init>(JSONObject.java:120)
+da: 	at truewatcher.tower.MyRegistry.initMap(MyRegistry.java:20)
+da: 	at truewatcher.tower.MyRegistry.getInstance(MyRegistry.java:32)
+da: 	at truewatcher.tower.TrackStorage.<init>(TrackStorage.java:18)
+da: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+da: 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+da: 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+da: 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:308)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: << truewatcher.tower.U.localTimeToUTC(java.lang.String)java.lang.String
+da: java.lang.ExceptionInInitializerError
+da: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+da: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+da: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+da: 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+da: 	at com.coverity.security.da.SandboxManager$1$1.run(SandboxManager.java:315)
+da: 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:320)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: Caused by: java.lang.RuntimeException: Stub!
+da: 	at android.graphics.Color.parseColor(Color.java:1078)
+da: 	at truewatcher.tower.U.<clinit>(U.java:48)
+da: 	... 9 more
+da: << truewatcher.tower.U.str2int(java.lang.String)java.lang.String
+da: java.lang.NoClassDefFoundError: Could not initialize class truewatcher.tower.U
+da: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+da: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+da: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+da: 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+da: 	at com.coverity.security.da.SandboxManager$1$1.run(SandboxManager.java:315)
+da: 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:320)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: << truewatcher.tower.U.utcToLocalTime(java.lang.String)java.lang.String
+da: java.lang.NoClassDefFoundError: Could not initialize class truewatcher.tower.U
+da: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+da: 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+da: 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+da: 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+da: 	at com.coverity.security.da.SandboxManager$1$1.run(SandboxManager.java:315)
+da: 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+da: 	at com.coverity.security.da.SandboxManager$1.call(SandboxManager.java:320)
+da: 	at com.coverity.security.da.Timeout$CallWithTimeout$1.run(Timeout.java:78)
+da: 	at java.base/java.lang.Thread.run(Thread.java:834)
+da: << android.arch.lifecycle.Lifecycling.getAdapterName(java.lang.String)java.lang.String
+da: Apparent escaper uses an unrecognized prefix character: (decimal val: 1)
+da: << android.support.v4.app.RemoteInput.getExtraResultsKeyForData(java.lang.String)java.lang.String
+da: Apparent escaper uses an unrecognized prefix character: (decimal val: 97)
+da: << android.support.v4.provider.RawDocumentFile.getTypeForName(java.lang.String)java.lang.String
+da: Apparent escaper uses an unrecognized prefix character: (decimal val: 97)
+da: << truewatcher.tower.JsonHelper.filterQuotes(java.lang.String)java.lang.String
+da: Not an escaper with character deleted: "
+da: << truewatcher.tower.Point.filterChars(java.lang.String)java.lang.String
+da: Not an escaper with single character replacement: 
+da:  -> /
+da: << truewatcher.tower.Point.filterCharsMore(java.lang.String)java.lang.String
+da: Not an escaper with single character replacement: 
+da:  -> /
+da: << truewatcher.tower.TrackStorage.getTowerDir(java.lang.String)java.lang.String
+da: Not an escaper with character deleted: 
+da: 
+da: === END Appending C:/Users/tsubasa/Downloads/tower-master/idir/tmp/java-security-da-debug.txt ===

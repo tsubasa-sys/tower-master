@@ -1,0 +1,227 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SENSITIVE_DATA_LEAK</checker>
+<type>sensitive_data_leak</type>
+<subtype>cleartext_in_file</subtype>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.filePutContents(java.lang.String, java.lang.String, java.lang.String, boolean)</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>sensitive_data</tag>
+<description>{CovLStrv2{{t{Reading data considered to be sensitive geographical data.}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Trackpoint.java</file>
+<line>46</line>
+</event>
+<event>
+<tag>call</tag>
+<description>{CovLStrv2{{t{Passing the sensitive data through {0}.}{{code{java.lang.String.valueOf(double)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Trackpoint.java</file>
+<line>46</line>
+</event>
+<event>
+<tag>field_write</tag>
+<description>{CovLStrv2{{t{Writing the sensitive data to the field {0}.}{{code{alt}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Trackpoint.java</file>
+<line>46</line>
+</event>
+<event>
+<tag>call</tag>
+<description>{CovLStrv2{{t{Finished call to {0}.}{{code{truewatcher.tower.Trackpoint.&lt;init&gt;(android.location.Location)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/TrackListener.java</file>
+<line>83</line>
+</event>
+<event>
+<tag>call</tag>
+<description>{CovLStrv2{{t{Making call to {0}.}{{code{truewatcher.tower.TrackStorage.simplySave(truewatcher.tower.Trackpoint)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/TrackListener.java</file>
+<line>84</line>
+</event>
+<event>
+<tag>call</tag>
+<description>{CovLStrv2{{t{Making call to {0}.}{{code{truewatcher.tower.Trackpoint.toCsv()}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/TrackStorage.java</file>
+<line>68</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Trackpoint.java</file>
+<function>truewatcher.tower.Trackpoint.toCsv()</function>
+<key>3cfb62ec75cf0d19bf3b89524ec6addc</key>
+<id>0</id>
+</model_ptr>
+</event>
+<event>
+<tag>returned</tag>
+<description>{CovLStrv2{{t{{0} returns the sensitive data.}{{code{truewatcher.tower.Trackpoint.toCsv()}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/TrackStorage.java</file>
+<line>68</line>
+</event>
+<event>
+<tag>argument</tag>
+<description>{CovLStrv2{{t{Passing the sensitive data, {0}, to {1}.}{{code{line}}}{{code{truewatcher.tower.U.filePutContents(java.lang.String, java.lang.String, java.lang.String, boolean)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/TrackStorage.java</file>
+<line>70</line>
+</event>
+<event>
+<tag>parm_in</tag>
+<description>{CovLStrv2{{t{Parameter {0} receives the sensitive data.}{{code{buf}}}}}}</description>
+<line>315</line>
+</event>
+<event>
+<main>true</main>
+<tag>sensitive_data_leak</tag>
+<description>{CovLStrv2{{t{Leaking sensitive geographical data, {0}.}{{code{buf.getBytes()}}}}{t{ Passing it to {0} stores it to the filesystem.}{{code{java.io.FileOutputStream.write}}}}}}</description>
+<line>319</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{{t{Do one of the following before storing it:}}{t{{br}- Encrypt the data.}}{t{{br}- Use a cryptographic hash on the data.}}}}</description>
+<line>319</line>
+</event>
+<extra>getBytes,stream,write,filesystem,geographical</extra>
+<subcategory>cleartext_storage_in_file</subcategory>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SENSITIVE_DATA_LEAK</checker>
+<type>sensitive_data_leak</type>
+<subtype>cleartext_in_log</subtype>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/TrackListener.java</file>
+<function>truewatcher.tower.TrackListener.onLocationChanged(android.location.Location)</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>sensitive_data</tag>
+<description>{CovLStrv2{{t{{0} returns sensitive geographical data.}{{code{android.location.Location.toString()}}}}}}</description>
+<line>58</line>
+</event>
+<event>
+<main>true</main>
+<tag>sensitive_data_leak</tag>
+<description>{CovLStrv2{{t{Leaking sensitive geographical data, {0}.}{{code{loc.toString()}}}}{t{ Passing it to {0} stores it to a log file or displays it on the console.}{{code{android.util.Log.i}}}}}}</description>
+<line>58</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{{t{Do one of the following before logging or printing it:}}{t{{br}- Encrypt the data.}}{t{{br}- Use a cryptographic hash on the data.}}}}</description>
+<line>58</line>
+</event>
+<extra>&quot;LocationReceiver:got a location &quot;,&quot;tower&quot;,i,toString,logging,geographical</extra>
+<subcategory>cleartext_storage_in_log</subcategory>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SENSITIVE_DATA_LEAK</checker>
+<type>sensitive_data_leak</type>
+<subtype>cleartext_in_log</subtype>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/JSbridge.java</file>
+<function>truewatcher.tower.JSbridge.consumeTrackpoint(truewatcher.tower.Trackpoint)</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>sensitive_data</tag>
+<description>{CovLStrv2{{t{Reading data considered to be sensitive geographical data.}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Trackpoint.java</file>
+<line>45</line>
+</event>
+<event>
+<tag>call</tag>
+<description>{CovLStrv2{{t{Passing the sensitive data through {0}.}{{code{java.lang.String.valueOf(double)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Trackpoint.java</file>
+<line>45</line>
+</event>
+<event>
+<tag>field_write</tag>
+<description>{CovLStrv2{{t{Writing the sensitive data to the field {0}.}{{code{lon}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Trackpoint.java</file>
+<line>45</line>
+</event>
+<event>
+<tag>call</tag>
+<description>{CovLStrv2{{t{Finished call to {0}.}{{code{truewatcher.tower.Trackpoint.&lt;init&gt;(android.location.Location)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/TrackListener.java</file>
+<line>83</line>
+</event>
+<event>
+<tag>call</tag>
+<description>{CovLStrv2{{t{Making call to {0}.}{{code{truewatcher.tower.JSbridge.consumeTrackpoint(truewatcher.tower.Trackpoint)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/TrackListener.java</file>
+<line>85</line>
+</event>
+<event>
+<tag>call</tag>
+<description>{CovLStrv2{{t{Making call to {0}.}{{code{truewatcher.tower.Trackpoint.makeJsonPresentation()}}}}}}</description>
+<line>106</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Trackpoint.java</file>
+<function>truewatcher.tower.Trackpoint.makeJsonPresentation()</function>
+<key>57ba6aa740b8e6875e755e97acd92851</key>
+<id>0</id>
+</model_ptr>
+</event>
+<event>
+<tag>returned</tag>
+<description>{CovLStrv2{{t{{0} returns the sensitive data.}{{code{truewatcher.tower.Trackpoint.makeJsonPresentation()}}}}}}</description>
+<line>106</line>
+</event>
+<event>
+<main>true</main>
+<tag>sensitive_data_leak</tag>
+<description>{CovLStrv2{{t{Leaking sensitive geographical data, {0}.}{{code{ll}}}}{t{ Passing it to {0} stores it to a log file or displays it on the console.}{{code{android.util.Log.d}}}}}}</description>
+<line>107</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{{t{Do one of the following before logging or printing it:}}{t{{br}- Encrypt the data.}}{t{{br}- Use a cryptographic hash on the data.}}}}</description>
+<line>107</line>
+</event>
+<extra>&quot;consumeTrackpoint:Adding:&quot;,&quot;tower&quot;,d,ll,logging,geographical</extra>
+<subcategory>cleartext_storage_in_log</subcategory>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SENSITIVE_DATA_LEAK</checker>
+<type>sensitive_data_leak</type>
+<subtype>cleartext_in_log</subtype>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/GpsInformer.java</file>
+<function>truewatcher.tower.GpsInformer$#1.onLocationChanged(android.location.Location)</function>
+<functionMergeName>truewatcher.tower.GpsInformer$#.onLocationChanged(android.location.Location)</functionMergeName>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>sensitive_data</tag>
+<description>{CovLStrv2{{t{{0} returns sensitive geographical data.}{{code{android.location.Location.toString()}}}}}}</description>
+<line>60</line>
+</event>
+<event>
+<main>true</main>
+<tag>sensitive_data_leak</tag>
+<description>{CovLStrv2{{t{Leaking sensitive geographical data, {0}.}{{code{loc.toString()}}}}{t{ Passing it to {0} stores it to a log file or displays it on the console.}{{code{android.util.Log.i}}}}}}</description>
+<line>60</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{{t{Do one of the following before logging or printing it:}}{t{{br}- Encrypt the data.}}{t{{br}- Use a cryptographic hash on the data.}}}}</description>
+<line>60</line>
+</event>
+<extra>&quot;mLocationListener:got a location &quot;,&quot;tower&quot;,i,toString,logging,geographical</extra>
+<subcategory>cleartext_storage_in_log</subcategory>
+<antecedentMerge>
+<domain>STATIC_JAVA</domain>
+<checker>SENSITIVE_DATA_LEAK</checker>
+<file>.</file>
+<function>truewatcher.tower.GpsInformer$1.onLocationChanged(android.location.Location)</function>
+<extra>&quot;mLocationListener:got a location &quot;,&quot;tower&quot;,i,toString,logging,geographical</extra>
+</antecedentMerge>
+</error>

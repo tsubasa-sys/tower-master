@@ -1,0 +1,27 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>FORWARD_NULL</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>constant_zero</subtype>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<function>truewatcher.tower.FileActivity$FileFragment.go(java.lang.String, java.lang.String)</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<main>true</main>
+<tag>var_deref_model</tag>
+<description>{CovLStrv2{{t{Passing {0} to {1}, which dereferences it.}{{code{null}}}{{code{showStat}}}}}}</description>
+<line>153</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<function>truewatcher.tower.FileActivity$FileFragment$Viewer.showStat(java.lang.String, truewatcher.tower.U$Summary, int, java.lang.String)</function>
+<key>6bf1774639e5325f6749caf5ec037c3c</key>
+<id>3</id>
+</model_ptr>
+</event>
+<extra>null</extra>
+<subcategory>deref_constant_zero</subcategory>
+</error>

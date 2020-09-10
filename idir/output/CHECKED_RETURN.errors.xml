@@ -1,0 +1,44 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>CHECKED_RETURN</checker>
+<type>unchecked_return_value</type>
+<subtype>short_read</subtype>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.fileGetContents(java.lang.String, java.lang.String)</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>check_return</tag>
+<description>{CovLStrv2{{t{{0} returns the number of bytes read, but it is ignored.}{{code{java.io.FileInputStream.read(byte[])}}}}}}</description>
+<line>295</line>
+</event>
+<extra>java.io.FileInputStream.read(byte[])</extra>
+<subcategory>short_read</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Ignoring number of bytes read</eventSetCaption>
+</eventSetCaptions>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>CHECKED_RETURN</checker>
+<type>unchecked_return_value</type>
+<subtype>short_read</subtype>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.readAsset(android.content.Context, java.lang.String)</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>check_return</tag>
+<description>{CovLStrv2{{t{{0} returns the number of bytes read, but it is ignored.}{{code{java.io.InputStream.read(byte[])}}}}}}</description>
+<line>308</line>
+</event>
+<extra>java.io.InputStream.read(byte[])</extra>
+<subcategory>short_read</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Ignoring number of bytes read</eventSetCaption>
+</eventSetCaptions>
+</error>

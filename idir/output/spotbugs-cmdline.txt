@@ -1,0 +1,29 @@
+C:\Program Files\Coverity\Coverity Static Analysis\jre\bin\java.exe
+-Dcoverity.killsocket.port=53639
+-Xms1024M
+-Xmx1024M
+-XX:+UseCompressedOops
+-server
+-Djava.security.manager
+-Djava.security.policy==file:C:/Program Files/Coverity/Coverity Static Analysis/spotbugs-ext/spotbugs.policy
+-Dcoverity.output.dir=C:\Users\tsubasa\Downloads\tower-master\idir\output
+-Dcoverity.sa.dir=C:\Program Files\Coverity\Coverity Static Analysis
+-Dspotbugs.home=C:\Program Files\Coverity\Coverity Static Analysis\spotbugs
+-Dcoverity.isatty=true
+-cp
+C:/Program Files/Coverity/Coverity Static Analysis/spotbugs-ext/spotbugs-wrapper.jar;C:/Program Files/Coverity/Coverity Static Analysis/spotbugs/lib/log4j-slf4j18-impl-2.11.1.jar;C:/Program Files/Coverity/Coverity Static Analysis/spotbugs/lib/log4j-api-2.11.1.jar;C:/Program Files/Coverity/Coverity Static Analysis/spotbugs/lib/log4j-core-2.11.1.jar;C:/Program Files/Coverity/Coverity Static Analysis/spotbugs/lib/slf4j-api-1.8.0-alpha2.jar;C:/Program Files/Coverity/Coverity Static Analysis/spotbugs/lib/config
+com.coverity.spotbugs.wrapper.Main
+-textui
+-project
+C:\Users\tsubasa\Downloads\tower-master\idir\output\spotbugs-project.xml
+-xml:withMessages
+-output
+C:\Users\tsubasa\Downloads\tower-master\idir\output\spotbugs-output.xml
+-low
+-include
+C:\Program Files\Coverity\Coverity Static Analysis\spotbugs-ext\config\include.coverity-default.xml
+-exclude
+C:\Program Files\Coverity\Coverity Static Analysis\spotbugs-ext\config\exclude.overlap.xml
+-omitVisitors
+FindReturnRef,MutableStaticFields,TestingGround,TestingGround2,FindUnsatisfiedObligation,CheckExpectedWarnings,LostLoggerDueToWeakReference,Noise,NoiseNullDeref,CheckTypeQualifiers
+-progress

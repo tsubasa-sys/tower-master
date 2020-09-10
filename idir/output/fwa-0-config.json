@@ -1,0 +1,1156 @@
+[
+  {
+    "directives": [
+      {
+        "after": [
+          "android.accounts.AccountAuthenticatorActivity.finish()void",
+          "android.accounts.AccountAuthenticatorActivity.setAccountAuthenticatorResult(android.os.Bundle)void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.accounts.AccountAuthenticatorActivity.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "android.app.ActivityGroup.getCurrentActivity()android.app.Activity",
+          "android.app.ActivityGroup.getLocalActivityManager()android.app.LocalActivityManager",
+          "android.app.ActivityGroup.onDestroy()void",
+          "android.app.ActivityGroup.onPause()void",
+          "android.app.ActivityGroup.onResume()void",
+          "android.app.ActivityGroup.onSaveInstanceState(android.os.Bundle)void",
+          "android.app.ActivityGroup.onStop()void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.app.ActivityGroup.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "android.app.DialogFragment.dismiss()void",
+          "android.app.DialogFragment.dismissAllowingStateLoss()void",
+          "android.app.DialogFragment.dump(java.lang.String, java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[])void",
+          "android.app.DialogFragment.getDialog()android.app.Dialog",
+          "android.app.DialogFragment.getShowsDialog()boolean",
+          "android.app.DialogFragment.getTheme()int",
+          "android.app.DialogFragment.isCancelable()boolean",
+          "android.app.DialogFragment.onActivityCreated(android.os.Bundle)void",
+          "android.app.DialogFragment.onAttach(android.content.Context)void",
+          "android.app.DialogFragment.onCancel(android.content.DialogInterface)void",
+          "android.app.DialogFragment.onCreateDialog(android.os.Bundle)android.app.Dialog",
+          "android.app.DialogFragment.onDestroyView()void",
+          "android.app.DialogFragment.onDetach()void",
+          "android.app.DialogFragment.onDismiss(android.content.DialogInterface)void",
+          "android.app.DialogFragment.onGetLayoutInflater(android.os.Bundle)android.view.LayoutInflater",
+          "android.app.DialogFragment.onSaveInstanceState(android.os.Bundle)void",
+          "android.app.DialogFragment.onStart()void",
+          "android.app.DialogFragment.onStop()void",
+          "android.app.DialogFragment.setCancelable(boolean)void",
+          "android.app.DialogFragment.setShowsDialog(boolean)void",
+          "android.app.DialogFragment.setStyle(int, int)void",
+          "android.app.DialogFragment.show(android.app.FragmentManager, java.lang.String)void",
+          "android.app.DialogFragment.show(android.app.FragmentTransaction, java.lang.String)int"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.app.DialogFragment.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "android.app.LauncherActivity.getTargetIntent()android.content.Intent",
+          "android.app.LauncherActivity.intentForPosition(int)android.content.Intent",
+          "android.app.LauncherActivity.itemForPosition(int)android.app.LauncherActivity$ListItem",
+          "android.app.LauncherActivity.makeListItems()java.util.List",
+          "android.app.LauncherActivity.onListItemClick(android.widget.ListView, android.view.View, int, long)void",
+          "android.app.LauncherActivity.onQueryPackageManager(android.content.Intent)java.util.List",
+          "android.app.LauncherActivity.onSetContentView()void",
+          "android.app.LauncherActivity.setTitle(int)void",
+          "android.app.LauncherActivity.setTitle(java.lang.CharSequence)void",
+          "android.app.LauncherActivity$IconResizer.createIconThumbnail(android.graphics.drawable.Drawable)android.graphics.drawable.Drawable",
+          "android.app.LauncherActivity$IconResizer.<init>(android.app.LauncherActivity)void",
+          "android.app.LauncherActivity$ListItem.<init>()void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.app.LauncherActivity.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "android.app.NativeActivity.onConfigurationChanged(android.content.res.Configuration)void",
+          "android.app.NativeActivity.onDestroy()void",
+          "android.app.NativeActivity.onGlobalLayout()void",
+          "android.app.NativeActivity.onInputQueueCreated(android.view.InputQueue)void",
+          "android.app.NativeActivity.onInputQueueDestroyed(android.view.InputQueue)void",
+          "android.app.NativeActivity.onLowMemory()void",
+          "android.app.NativeActivity.onPause()void",
+          "android.app.NativeActivity.onResume()void",
+          "android.app.NativeActivity.onSaveInstanceState(android.os.Bundle)void",
+          "android.app.NativeActivity.onStart()void",
+          "android.app.NativeActivity.onStop()void",
+          "android.app.NativeActivity.onWindowFocusChanged(boolean)void",
+          "android.app.NativeActivity.surfaceChanged(android.view.SurfaceHolder, int, int, int)void",
+          "android.app.NativeActivity.surfaceCreated(android.view.SurfaceHolder)void",
+          "android.app.NativeActivity.surfaceDestroyed(android.view.SurfaceHolder)void",
+          "android.app.NativeActivity.surfaceRedrawNeeded(android.view.SurfaceHolder)void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.app.NativeActivity.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "android.preference.PreferenceActivity.addPreferencesFromIntent(android.content.Intent)void",
+          "android.preference.PreferenceActivity.addPreferencesFromResource(int)void",
+          "android.preference.PreferenceActivity.findPreference(java.lang.CharSequence)android.preference.Preference",
+          "android.preference.PreferenceActivity.finishPreferencePanel(android.app.Fragment, int, android.content.Intent)void",
+          "android.preference.PreferenceActivity.getPreferenceManager()android.preference.PreferenceManager",
+          "android.preference.PreferenceActivity.getPreferenceScreen()android.preference.PreferenceScreen",
+          "android.preference.PreferenceActivity.hasHeaders()boolean",
+          "android.preference.PreferenceActivity.invalidateHeaders()void",
+          "android.preference.PreferenceActivity.isMultiPane()boolean",
+          "android.preference.PreferenceActivity.isValidFragment(java.lang.String)boolean",
+          "android.preference.PreferenceActivity.loadHeadersFromResource(int, java.util.List)void",
+          "android.preference.PreferenceActivity.onActivityResult(int, int, android.content.Intent)void",
+          "android.preference.PreferenceActivity.onBackPressed()void",
+          "android.preference.PreferenceActivity.onBuildHeaders(java.util.List)void",
+          "android.preference.PreferenceActivity.onBuildStartFragmentIntent(java.lang.String, android.os.Bundle, int, int)android.content.Intent",
+          "android.preference.PreferenceActivity.onContentChanged()void",
+          "android.preference.PreferenceActivity.onDestroy()void",
+          "android.preference.PreferenceActivity.onGetInitialHeader()android.preference.PreferenceActivity$Header",
+          "android.preference.PreferenceActivity.onGetNewHeader()android.preference.PreferenceActivity$Header",
+          "android.preference.PreferenceActivity.onHeaderClick(android.preference.PreferenceActivity$Header, int)void",
+          "android.preference.PreferenceActivity.onIsHidingHeaders()boolean",
+          "android.preference.PreferenceActivity.onIsMultiPane()boolean",
+          "android.preference.PreferenceActivity.onListItemClick(android.widget.ListView, android.view.View, int, long)void",
+          "android.preference.PreferenceActivity.onNewIntent(android.content.Intent)void",
+          "android.preference.PreferenceActivity.onOptionsItemSelected(android.view.MenuItem)boolean",
+          "android.preference.PreferenceActivity.onPreferenceStartFragment(android.preference.PreferenceFragment, android.preference.Preference)boolean",
+          "android.preference.PreferenceActivity.onPreferenceTreeClick(android.preference.PreferenceScreen, android.preference.Preference)boolean",
+          "android.preference.PreferenceActivity.onRestoreInstanceState(android.os.Bundle)void",
+          "android.preference.PreferenceActivity.onSaveInstanceState(android.os.Bundle)void",
+          "android.preference.PreferenceActivity.onStop()void",
+          "android.preference.PreferenceActivity.setListFooter(android.view.View)void",
+          "android.preference.PreferenceActivity.setParentTitle(java.lang.CharSequence, java.lang.CharSequence, android.view.View$OnClickListener)void",
+          "android.preference.PreferenceActivity.setPreferenceScreen(android.preference.PreferenceScreen)void",
+          "android.preference.PreferenceActivity.showBreadCrumbs(java.lang.CharSequence, java.lang.CharSequence)void",
+          "android.preference.PreferenceActivity.startPreferenceFragment(android.app.Fragment, boolean)void",
+          "android.preference.PreferenceActivity.startPreferencePanel(java.lang.String, android.os.Bundle, int, java.lang.CharSequence, android.app.Fragment, int)void",
+          "android.preference.PreferenceActivity.startWithFragment(java.lang.String, android.os.Bundle, android.app.Fragment, int)void",
+          "android.preference.PreferenceActivity.startWithFragment(java.lang.String, android.os.Bundle, android.app.Fragment, int, int, int)void",
+          "android.preference.PreferenceActivity.switchToHeader(android.preference.PreferenceActivity$Header)void",
+          "android.preference.PreferenceActivity.switchToHeader(java.lang.String, android.os.Bundle)void",
+          "android.preference.PreferenceActivity$Header.describeContents()int",
+          "android.preference.PreferenceActivity$Header.getBreadCrumbShortTitle(android.content.res.Resources)java.lang.CharSequence",
+          "android.preference.PreferenceActivity$Header.getBreadCrumbTitle(android.content.res.Resources)java.lang.CharSequence",
+          "android.preference.PreferenceActivity$Header.getSummary(android.content.res.Resources)java.lang.CharSequence",
+          "android.preference.PreferenceActivity$Header.getTitle(android.content.res.Resources)java.lang.CharSequence",
+          "android.preference.PreferenceActivity$Header.readFromParcel(android.os.Parcel)void",
+          "android.preference.PreferenceActivity$Header.writeToParcel(android.os.Parcel, int)void",
+          "android.preference.PreferenceActivity$Header.<init>()void",
+          "android.preference.PreferenceActivity$Header.<clinit>()void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.preference.PreferenceActivity.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "android.preference.PreferenceFragment.addPreferencesFromIntent(android.content.Intent)void",
+          "android.preference.PreferenceFragment.addPreferencesFromResource(int)void",
+          "android.preference.PreferenceFragment.findPreference(java.lang.CharSequence)android.preference.Preference",
+          "android.preference.PreferenceFragment.getPreferenceManager()android.preference.PreferenceManager",
+          "android.preference.PreferenceFragment.getPreferenceScreen()android.preference.PreferenceScreen",
+          "android.preference.PreferenceFragment.onActivityCreated(android.os.Bundle)void",
+          "android.preference.PreferenceFragment.onActivityResult(int, int, android.content.Intent)void",
+          "android.preference.PreferenceFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)android.view.View",
+          "android.preference.PreferenceFragment.onDestroy()void",
+          "android.preference.PreferenceFragment.onDestroyView()void",
+          "android.preference.PreferenceFragment.onPreferenceTreeClick(android.preference.PreferenceScreen, android.preference.Preference)boolean",
+          "android.preference.PreferenceFragment.onSaveInstanceState(android.os.Bundle)void",
+          "android.preference.PreferenceFragment.onStart()void",
+          "android.preference.PreferenceFragment.onStop()void",
+          "android.preference.PreferenceFragment.onViewCreated(android.view.View, android.os.Bundle)void",
+          "android.preference.PreferenceFragment.setPreferenceScreen(android.preference.PreferenceScreen)void",
+          "android.preference.PreferenceFragment$OnPreferenceStartFragmentCallback.onPreferenceStartFragment(android.preference.PreferenceFragment, android.preference.Preference)boolean"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.preference.PreferenceFragment.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "android.support.v14.preference.EditTextPreferenceDialogFragment.needInputMethod()boolean",
+          "android.support.v14.preference.EditTextPreferenceDialogFragment.onBindDialogView(android.view.View)void",
+          "android.support.v14.preference.EditTextPreferenceDialogFragment.onDialogClosed(boolean)void",
+          "android.support.v14.preference.EditTextPreferenceDialogFragment.onSaveInstanceState(android.os.Bundle)void",
+          "android.support.v14.preference.EditTextPreferenceDialogFragment.getEditTextPreference()android.support.v7.preference.EditTextPreference",
+          "android.support.v14.preference.EditTextPreferenceDialogFragment.newInstance(java.lang.String)android.support.v14.preference.EditTextPreferenceDialogFragment"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.support.v14.preference.EditTextPreferenceDialogFragment.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "android.support.v14.preference.ListPreferenceDialogFragment.onDialogClosed(boolean)void",
+          "android.support.v14.preference.ListPreferenceDialogFragment.onPrepareDialogBuilder(android.app.AlertDialog$Builder)void",
+          "android.support.v14.preference.ListPreferenceDialogFragment.onSaveInstanceState(android.os.Bundle)void",
+          "android.support.v14.preference.ListPreferenceDialogFragment.getListPreference()android.support.v7.preference.ListPreference",
+          "android.support.v14.preference.ListPreferenceDialogFragment.newInstance(java.lang.String)android.support.v14.preference.ListPreferenceDialogFragment",
+          "android.support.v14.preference.ListPreferenceDialogFragment$1.onClick(android.content.DialogInterface, int)void",
+          "android.support.v14.preference.ListPreferenceDialogFragment$1.<init>(android.support.v14.preference.ListPreferenceDialogFragment)void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.support.v14.preference.ListPreferenceDialogFragment.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "android.support.v14.preference.MultiSelectListPreferenceDialogFragment.onDialogClosed(boolean)void",
+          "android.support.v14.preference.MultiSelectListPreferenceDialogFragment.onPrepareDialogBuilder(android.app.AlertDialog$Builder)void",
+          "android.support.v14.preference.MultiSelectListPreferenceDialogFragment.onSaveInstanceState(android.os.Bundle)void",
+          "android.support.v14.preference.MultiSelectListPreferenceDialogFragment.getListPreference()android.support.v7.preference.internal.AbstractMultiSelectListPreference",
+          "android.support.v14.preference.MultiSelectListPreferenceDialogFragment.newInstance(java.lang.String)android.support.v14.preference.MultiSelectListPreferenceDialogFragment",
+          "android.support.v14.preference.MultiSelectListPreferenceDialogFragment$1.onClick(android.content.DialogInterface, int, boolean)void",
+          "android.support.v14.preference.MultiSelectListPreferenceDialogFragment$1.<init>(android.support.v14.preference.MultiSelectListPreferenceDialogFragment)void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.support.v14.preference.MultiSelectListPreferenceDialogFragment.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "android.support.v14.preference.PreferenceDialogFragment.onDialogClosed(boolean)void",
+          "android.support.v14.preference.PreferenceDialogFragment.getPreference()android.support.v7.preference.DialogPreference",
+          "android.support.v14.preference.PreferenceDialogFragment.needInputMethod()boolean",
+          "android.support.v14.preference.PreferenceDialogFragment.onBindDialogView(android.view.View)void",
+          "android.support.v14.preference.PreferenceDialogFragment.onClick(android.content.DialogInterface, int)void",
+          "android.support.v14.preference.PreferenceDialogFragment.onCreateDialog(android.os.Bundle)android.app.Dialog",
+          "android.support.v14.preference.PreferenceDialogFragment.onCreateDialogView(android.content.Context)android.view.View",
+          "android.support.v14.preference.PreferenceDialogFragment.onDismiss(android.content.DialogInterface)void",
+          "android.support.v14.preference.PreferenceDialogFragment.onPrepareDialogBuilder(android.app.AlertDialog$Builder)void",
+          "android.support.v14.preference.PreferenceDialogFragment.onSaveInstanceState(android.os.Bundle)void",
+          "android.support.v14.preference.PreferenceDialogFragment.requestInputMethod(android.app.Dialog)void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.support.v14.preference.PreferenceDialogFragment.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "android.support.v14.preference.PreferenceFragment.onCreatePreferences(android.os.Bundle, java.lang.String)void",
+          "android.support.v14.preference.PreferenceFragment.addPreferencesFromResource(int)void",
+          "android.support.v14.preference.PreferenceFragment.bindPreferences()void",
+          "android.support.v14.preference.PreferenceFragment.findPreference(java.lang.CharSequence)android.support.v7.preference.Preference",
+          "android.support.v14.preference.PreferenceFragment.getCallbackFragment()android.app.Fragment",
+          "android.support.v14.preference.PreferenceFragment.getListView()android.support.v7.widget.RecyclerView",
+          "android.support.v14.preference.PreferenceFragment.getPreferenceManager()android.support.v7.preference.PreferenceManager",
+          "android.support.v14.preference.PreferenceFragment.getPreferenceScreen()android.support.v7.preference.PreferenceScreen",
+          "android.support.v14.preference.PreferenceFragment.onBindPreferences()void",
+          "android.support.v14.preference.PreferenceFragment.onCreateAdapter(android.support.v7.preference.PreferenceScreen)android.support.v7.widget.RecyclerView$Adapter",
+          "android.support.v14.preference.PreferenceFragment.onCreateLayoutManager()android.support.v7.widget.RecyclerView$LayoutManager",
+          "android.support.v14.preference.PreferenceFragment.onCreateRecyclerView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)android.support.v7.widget.RecyclerView",
+          "android.support.v14.preference.PreferenceFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)android.view.View",
+          "android.support.v14.preference.PreferenceFragment.onDestroyView()void",
+          "android.support.v14.preference.PreferenceFragment.onDisplayPreferenceDialog(android.support.v7.preference.Preference)void",
+          "android.support.v14.preference.PreferenceFragment.onNavigateToScreen(android.support.v7.preference.PreferenceScreen)void",
+          "android.support.v14.preference.PreferenceFragment.onPreferenceTreeClick(android.support.v7.preference.Preference)boolean",
+          "android.support.v14.preference.PreferenceFragment.onSaveInstanceState(android.os.Bundle)void",
+          "android.support.v14.preference.PreferenceFragment.onStart()void",
+          "android.support.v14.preference.PreferenceFragment.onStop()void",
+          "android.support.v14.preference.PreferenceFragment.onUnbindPreferences()void",
+          "android.support.v14.preference.PreferenceFragment.onViewCreated(android.view.View, android.os.Bundle)void",
+          "android.support.v14.preference.PreferenceFragment.scrollToPreference(android.support.v7.preference.Preference)void",
+          "android.support.v14.preference.PreferenceFragment.scrollToPreference(java.lang.String)void",
+          "android.support.v14.preference.PreferenceFragment.setDivider(android.graphics.drawable.Drawable)void",
+          "android.support.v14.preference.PreferenceFragment.setDividerHeight(int)void",
+          "android.support.v14.preference.PreferenceFragment.setPreferenceScreen(android.support.v7.preference.PreferenceScreen)void",
+          "android.support.v14.preference.PreferenceFragment.setPreferencesFromResource(int, java.lang.String)void",
+          "android.support.v14.preference.PreferenceFragment.postBindPreferences()void",
+          "android.support.v14.preference.PreferenceFragment.requirePreferenceManager()void",
+          "android.support.v14.preference.PreferenceFragment.scrollToPreferenceInternal(android.support.v7.preference.Preference, java.lang.String)void",
+          "android.support.v14.preference.PreferenceFragment.unbindPreferences()void",
+          "android.support.v14.preference.PreferenceFragment$1.handleMessage(android.os.Message)void",
+          "android.support.v14.preference.PreferenceFragment$1.<init>(android.support.v14.preference.PreferenceFragment)void",
+          "android.support.v14.preference.PreferenceFragment$2.run()void",
+          "android.support.v14.preference.PreferenceFragment$2.<init>(android.support.v14.preference.PreferenceFragment)void",
+          "android.support.v14.preference.PreferenceFragment$3.run()void",
+          "android.support.v14.preference.PreferenceFragment$3.<init>(android.support.v14.preference.PreferenceFragment, android.support.v7.preference.Preference, java.lang.String)void",
+          "android.support.v14.preference.PreferenceFragment$DividerDecoration.getItemOffsets(android.graphics.Rect, android.view.View, android.support.v7.widget.RecyclerView, android.support.v7.widget.RecyclerView$State)void",
+          "android.support.v14.preference.PreferenceFragment$DividerDecoration.onDrawOver(android.graphics.Canvas, android.support.v7.widget.RecyclerView, android.support.v7.widget.RecyclerView$State)void",
+          "android.support.v14.preference.PreferenceFragment$DividerDecoration.setAllowDividerAfterLastItem(boolean)void",
+          "android.support.v14.preference.PreferenceFragment$DividerDecoration.setDivider(android.graphics.drawable.Drawable)void",
+          "android.support.v14.preference.PreferenceFragment$DividerDecoration.setDividerHeight(int)void",
+          "android.support.v14.preference.PreferenceFragment$DividerDecoration.shouldDrawDividerBelow(android.view.View, android.support.v7.widget.RecyclerView)boolean",
+          "android.support.v14.preference.PreferenceFragment$DividerDecoration.<init>(android.support.v14.preference.PreferenceFragment)void",
+          "android.support.v14.preference.PreferenceFragment$OnPreferenceDisplayDialogCallback.onPreferenceDisplayDialog(android.support.v14.preference.PreferenceFragment, android.support.v7.preference.Preference)boolean",
+          "android.support.v14.preference.PreferenceFragment$OnPreferenceStartFragmentCallback.onPreferenceStartFragment(android.support.v14.preference.PreferenceFragment, android.support.v7.preference.Preference)boolean",
+          "android.support.v14.preference.PreferenceFragment$OnPreferenceStartScreenCallback.onPreferenceStartScreen(android.support.v14.preference.PreferenceFragment, android.support.v7.preference.PreferenceScreen)boolean",
+          "android.support.v14.preference.PreferenceFragment$ScrollToPreferenceObserver.onChanged()void",
+          "android.support.v14.preference.PreferenceFragment$ScrollToPreferenceObserver.onItemRangeChanged(int, int)void",
+          "android.support.v14.preference.PreferenceFragment$ScrollToPreferenceObserver.onItemRangeChanged(int, int, java.lang.Object)void",
+          "android.support.v14.preference.PreferenceFragment$ScrollToPreferenceObserver.onItemRangeInserted(int, int)void",
+          "android.support.v14.preference.PreferenceFragment$ScrollToPreferenceObserver.onItemRangeMoved(int, int, int)void",
+          "android.support.v14.preference.PreferenceFragment$ScrollToPreferenceObserver.onItemRangeRemoved(int, int)void",
+          "android.support.v14.preference.PreferenceFragment$ScrollToPreferenceObserver.scrollToPreference()void",
+          "android.support.v14.preference.PreferenceFragment$ScrollToPreferenceObserver.<init>(android.support.v7.widget.RecyclerView$Adapter, android.support.v7.widget.RecyclerView, android.support.v7.preference.Preference, java.lang.String)void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.support.v14.preference.PreferenceFragment.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "android.support.v4.app.FragmentActivity.dispatchFragmentsOnCreateView(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet)android.view.View",
+          "android.support.v4.app.FragmentActivity.dump(java.lang.String, java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[])void",
+          "android.support.v4.app.FragmentActivity.getLastCustomNonConfigurationInstance()java.lang.Object",
+          "android.support.v4.app.FragmentActivity.getLifecycle()android.arch.lifecycle.Lifecycle",
+          "android.support.v4.app.FragmentActivity.getSupportFragmentManager()android.support.v4.app.FragmentManager",
+          "android.support.v4.app.FragmentActivity.getSupportLoaderManager()android.support.v4.app.LoaderManager",
+          "android.support.v4.app.FragmentActivity.getViewModelStore()android.arch.lifecycle.ViewModelStore",
+          "android.support.v4.app.FragmentActivity.onActivityResult(int, int, android.content.Intent)void",
+          "android.support.v4.app.FragmentActivity.onAttachFragment(android.support.v4.app.Fragment)void",
+          "android.support.v4.app.FragmentActivity.onBackPressed()void",
+          "android.support.v4.app.FragmentActivity.onConfigurationChanged(android.content.res.Configuration)void",
+          "android.support.v4.app.FragmentActivity.onCreatePanelMenu(int, android.view.Menu)boolean",
+          "android.support.v4.app.FragmentActivity.onCreateView(android.view.View, java.lang.String, android.content.Context, android.util.AttributeSet)android.view.View",
+          "android.support.v4.app.FragmentActivity.onCreateView(java.lang.String, android.content.Context, android.util.AttributeSet)android.view.View",
+          "android.support.v4.app.FragmentActivity.onDestroy()void",
+          "android.support.v4.app.FragmentActivity.onLowMemory()void",
+          "android.support.v4.app.FragmentActivity.onMenuItemSelected(int, android.view.MenuItem)boolean",
+          "android.support.v4.app.FragmentActivity.onMultiWindowModeChanged(boolean)void",
+          "android.support.v4.app.FragmentActivity.onNewIntent(android.content.Intent)void",
+          "android.support.v4.app.FragmentActivity.onPanelClosed(int, android.view.Menu)void",
+          "android.support.v4.app.FragmentActivity.onPause()void",
+          "android.support.v4.app.FragmentActivity.onPictureInPictureModeChanged(boolean)void",
+          "android.support.v4.app.FragmentActivity.onPostResume()void",
+          "android.support.v4.app.FragmentActivity.onPrepareOptionsPanel(android.view.View, android.view.Menu)boolean",
+          "android.support.v4.app.FragmentActivity.onPreparePanel(int, android.view.View, android.view.Menu)boolean",
+          "android.support.v4.app.FragmentActivity.onRequestPermissionsResult(int, java.lang.String[], int[])void",
+          "android.support.v4.app.FragmentActivity.onResume()void",
+          "android.support.v4.app.FragmentActivity.onResumeFragments()void",
+          "android.support.v4.app.FragmentActivity.onRetainCustomNonConfigurationInstance()java.lang.Object",
+          "android.support.v4.app.FragmentActivity.onRetainNonConfigurationInstance()java.lang.Object",
+          "android.support.v4.app.FragmentActivity.onSaveInstanceState(android.os.Bundle)void",
+          "android.support.v4.app.FragmentActivity.onStart()void",
+          "android.support.v4.app.FragmentActivity.onStateNotSaved()void",
+          "android.support.v4.app.FragmentActivity.onStop()void",
+          "android.support.v4.app.FragmentActivity.requestPermissionsFromFragment(android.support.v4.app.Fragment, java.lang.String[], int)void",
+          "android.support.v4.app.FragmentActivity.setEnterSharedElementCallback(android.support.v4.app.SharedElementCallback)void",
+          "android.support.v4.app.FragmentActivity.setExitSharedElementCallback(android.support.v4.app.SharedElementCallback)void",
+          "android.support.v4.app.FragmentActivity.startActivityForResult(android.content.Intent, int)void",
+          "android.support.v4.app.FragmentActivity.startActivityForResult(android.content.Intent, int, android.os.Bundle)void",
+          "android.support.v4.app.FragmentActivity.startActivityFromFragment(android.support.v4.app.Fragment, android.content.Intent, int)void",
+          "android.support.v4.app.FragmentActivity.startActivityFromFragment(android.support.v4.app.Fragment, android.content.Intent, int, android.os.Bundle)void",
+          "android.support.v4.app.FragmentActivity.startIntentSenderForResult(android.content.IntentSender, int, android.content.Intent, int, int, int)void",
+          "android.support.v4.app.FragmentActivity.startIntentSenderForResult(android.content.IntentSender, int, android.content.Intent, int, int, int, android.os.Bundle)void",
+          "android.support.v4.app.FragmentActivity.startIntentSenderFromFragment(android.support.v4.app.Fragment, android.content.IntentSender, int, android.content.Intent, int, int, int, android.os.Bundle)void",
+          "android.support.v4.app.FragmentActivity.supportFinishAfterTransition()void",
+          "android.support.v4.app.FragmentActivity.supportInvalidateOptionsMenu()void",
+          "android.support.v4.app.FragmentActivity.supportPostponeEnterTransition()void",
+          "android.support.v4.app.FragmentActivity.supportStartPostponedEnterTransition()void",
+          "android.support.v4.app.FragmentActivity.validateRequestPermissionsRequestCode(int)void",
+          "android.support.v4.app.FragmentActivity.allocateRequestIndex(android.support.v4.app.Fragment)int",
+          "android.support.v4.app.FragmentActivity.markFragmentsCreated()void",
+          "android.support.v4.app.FragmentActivity.checkForValidRequestCode(int)void",
+          "android.support.v4.app.FragmentActivity.markState(android.support.v4.app.FragmentManager, android.arch.lifecycle.Lifecycle$State)boolean",
+          "android.support.v4.app.FragmentActivity$1.handleMessage(android.os.Message)void",
+          "android.support.v4.app.FragmentActivity$1.<init>(android.support.v4.app.FragmentActivity)void",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onAttachFragment(android.support.v4.app.Fragment)void",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onDump(java.lang.String, java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[])void",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onFindViewById(int)android.view.View",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onGetHost()android.support.v4.app.FragmentActivity",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onGetHost()java.lang.Object",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onGetLayoutInflater()android.view.LayoutInflater",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onGetWindowAnimations()int",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onHasView()boolean",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onHasWindowAnimations()boolean",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onRequestPermissionsFromFragment(android.support.v4.app.Fragment, java.lang.String[], int)void",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onShouldSaveFragmentState(android.support.v4.app.Fragment)boolean",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onShouldShowRequestPermissionRationale(java.lang.String)boolean",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onStartActivityFromFragment(android.support.v4.app.Fragment, android.content.Intent, int)void",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onStartActivityFromFragment(android.support.v4.app.Fragment, android.content.Intent, int, android.os.Bundle)void",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onStartIntentSenderFromFragment(android.support.v4.app.Fragment, android.content.IntentSender, int, android.content.Intent, int, int, int, android.os.Bundle)void",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.onSupportInvalidateOptionsMenu()void",
+          "android.support.v4.app.FragmentActivity$HostCallbacks.<init>(android.support.v4.app.FragmentActivity)void",
+          "android.support.v4.app.FragmentActivity$NonConfigurationInstances.<init>()void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.support.v4.app.FragmentActivity.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "android.support.v4.app.SupportActivity.dispatchKeyEvent(android.view.KeyEvent)boolean",
+          "android.support.v4.app.SupportActivity.dispatchKeyShortcutEvent(android.view.KeyEvent)boolean",
+          "android.support.v4.app.SupportActivity.getExtraData(java.lang.Class)android.support.v4.app.SupportActivity$ExtraData",
+          "android.support.v4.app.SupportActivity.getLifecycle()android.arch.lifecycle.Lifecycle",
+          "android.support.v4.app.SupportActivity.onSaveInstanceState(android.os.Bundle)void",
+          "android.support.v4.app.SupportActivity.putExtraData(android.support.v4.app.SupportActivity$ExtraData)void",
+          "android.support.v4.app.SupportActivity.superDispatchKeyEvent(android.view.KeyEvent)boolean",
+          "android.support.v4.app.SupportActivity$ExtraData.<init>()void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.support.v4.app.SupportActivity.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "android.support.v7.app.AppCompatActivity.addContentView(android.view.View, android.view.ViewGroup$LayoutParams)void",
+          "android.support.v7.app.AppCompatActivity.closeOptionsMenu()void",
+          "android.support.v7.app.AppCompatActivity.dispatchKeyEvent(android.view.KeyEvent)boolean",
+          "android.support.v7.app.AppCompatActivity.findViewById(int)android.view.View",
+          "android.support.v7.app.AppCompatActivity.getDelegate()android.support.v7.app.AppCompatDelegate",
+          "android.support.v7.app.AppCompatActivity.getDrawerToggleDelegate()android.support.v7.app.ActionBarDrawerToggle$Delegate",
+          "android.support.v7.app.AppCompatActivity.getMenuInflater()android.view.MenuInflater",
+          "android.support.v7.app.AppCompatActivity.getResources()android.content.res.Resources",
+          "android.support.v7.app.AppCompatActivity.getSupportActionBar()android.support.v7.app.ActionBar",
+          "android.support.v7.app.AppCompatActivity.getSupportParentActivityIntent()android.content.Intent",
+          "android.support.v7.app.AppCompatActivity.invalidateOptionsMenu()void",
+          "android.support.v7.app.AppCompatActivity.onConfigurationChanged(android.content.res.Configuration)void",
+          "android.support.v7.app.AppCompatActivity.onContentChanged()void",
+          "android.support.v7.app.AppCompatActivity.onCreateSupportNavigateUpTaskStack(android.support.v4.app.TaskStackBuilder)void",
+          "android.support.v7.app.AppCompatActivity.onDestroy()void",
+          "android.support.v7.app.AppCompatActivity.onKeyDown(int, android.view.KeyEvent)boolean",
+          "android.support.v7.app.AppCompatActivity.onMenuItemSelected(int, android.view.MenuItem)boolean",
+          "android.support.v7.app.AppCompatActivity.onMenuOpened(int, android.view.Menu)boolean",
+          "android.support.v7.app.AppCompatActivity.onPanelClosed(int, android.view.Menu)void",
+          "android.support.v7.app.AppCompatActivity.onPostCreate(android.os.Bundle)void",
+          "android.support.v7.app.AppCompatActivity.onPostResume()void",
+          "android.support.v7.app.AppCompatActivity.onPrepareSupportNavigateUpTaskStack(android.support.v4.app.TaskStackBuilder)void",
+          "android.support.v7.app.AppCompatActivity.onSaveInstanceState(android.os.Bundle)void",
+          "android.support.v7.app.AppCompatActivity.onStart()void",
+          "android.support.v7.app.AppCompatActivity.onStop()void",
+          "android.support.v7.app.AppCompatActivity.onSupportActionModeFinished(android.support.v7.view.ActionMode)void",
+          "android.support.v7.app.AppCompatActivity.onSupportActionModeStarted(android.support.v7.view.ActionMode)void",
+          "android.support.v7.app.AppCompatActivity.onSupportContentChanged()void",
+          "android.support.v7.app.AppCompatActivity.onSupportNavigateUp()boolean",
+          "android.support.v7.app.AppCompatActivity.onTitleChanged(java.lang.CharSequence, int)void",
+          "android.support.v7.app.AppCompatActivity.onWindowStartingSupportActionMode(android.support.v7.view.ActionMode$Callback)android.support.v7.view.ActionMode",
+          "android.support.v7.app.AppCompatActivity.openOptionsMenu()void",
+          "android.support.v7.app.AppCompatActivity.setContentView(android.view.View)void",
+          "android.support.v7.app.AppCompatActivity.setContentView(android.view.View, android.view.ViewGroup$LayoutParams)void",
+          "android.support.v7.app.AppCompatActivity.setContentView(int)void",
+          "android.support.v7.app.AppCompatActivity.setSupportActionBar(android.support.v7.widget.Toolbar)void",
+          "android.support.v7.app.AppCompatActivity.setSupportProgress(int)void",
+          "android.support.v7.app.AppCompatActivity.setSupportProgressBarIndeterminate(boolean)void",
+          "android.support.v7.app.AppCompatActivity.setSupportProgressBarIndeterminateVisibility(boolean)void",
+          "android.support.v7.app.AppCompatActivity.setSupportProgressBarVisibility(boolean)void",
+          "android.support.v7.app.AppCompatActivity.setTheme(int)void",
+          "android.support.v7.app.AppCompatActivity.startSupportActionMode(android.support.v7.view.ActionMode$Callback)android.support.v7.view.ActionMode",
+          "android.support.v7.app.AppCompatActivity.supportInvalidateOptionsMenu()void",
+          "android.support.v7.app.AppCompatActivity.supportNavigateUpTo(android.content.Intent)void",
+          "android.support.v7.app.AppCompatActivity.supportRequestWindowFeature(int)boolean",
+          "android.support.v7.app.AppCompatActivity.supportShouldUpRecreateTask(android.content.Intent)boolean",
+          "android.support.v7.app.AppCompatActivity.performMenuItemShortcut(int, android.view.KeyEvent)boolean"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.support.v7.app.AppCompatActivity.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "truewatcher.tower.AddPointActivity.createFragment()android.support.v4.app.Fragment",
+          "truewatcher.tower.AddPointActivity.onCreateOptionsMenu(android.view.Menu)boolean",
+          "truewatcher.tower.AddPointActivity.onOptionsItemSelected(android.view.MenuItem)boolean",
+          "truewatcher.tower.AddPointActivity$AddPointFragment.onCreate(android.os.Bundle)void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment.onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater)void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)android.view.View",
+          "truewatcher.tower.AddPointActivity$AddPointFragment.onOptionsItemSelected(android.view.MenuItem)boolean",
+          "truewatcher.tower.AddPointActivity$AddPointFragment.<instance_field_initializations>()void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment.<init>()void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Adder.getAdditionType()java.lang.String",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Adder.getLatLon(java.lang.String)java.lang.String[]",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Adder.go()void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Adder.preparePoint(java.lang.String, java.lang.String[], boolean, boolean)truewatcher.tower.Point",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Adder.<init>()void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$PointRenderer.addProgress(java.lang.String)void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$PointRenderer.onPointavailable(truewatcher.tower.Point)void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$PointRenderer.showPoint(truewatcher.tower.Point)void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$PointRenderer.<init>(android.widget.TextView, android.widget.TextView)void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.alert(java.lang.String)void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.getAsCenter()boolean",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.getCheckedRadioButton()int",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.getComment()java.lang.String",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.getIsProtected()boolean",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.getLat()java.lang.String",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.getLon()java.lang.String",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.getTvCellData()android.widget.TextView",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.getTvCellStatus()android.widget.TextView",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.getTvGpsData()android.widget.TextView",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.getTvGpsStatus()android.widget.TextView",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.removeFocus()void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.setComment(java.lang.String)void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.setListeners(truewatcher.tower.AddPointActivity$AddPointFragment$PointRenderer, truewatcher.tower.AddPointActivity$AddPointFragment$PointRenderer)void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.showCenter(java.lang.String)void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.showEdge(truewatcher.tower.PointList)void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.showNumber(java.lang.String)void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.uncheckBoxes()void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.<instance_field_initializations>()void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer.<init>(android.view.View)void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer$1.onClick(android.view.View)void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer$1.<init>()void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer$2.onClick(android.view.View)void",
+          "truewatcher.tower.AddPointActivity$AddPointFragment$Viewer$2.<init>()void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "truewatcher.tower.AddPointActivity.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "truewatcher.tower.EditPointActivity.createFragment()android.support.v4.app.Fragment",
+          "truewatcher.tower.EditPointActivity.getArgCaller()java.lang.String",
+          "truewatcher.tower.EditPointActivity.getArgId()int",
+          "truewatcher.tower.EditPointActivity.onCreateOptionsMenu(android.view.Menu)boolean",
+          "truewatcher.tower.EditPointActivity.onOptionsItemSelected(android.view.MenuItem)boolean",
+          "truewatcher.tower.EditPointActivity.showConfirmationDialog(android.support.v4.app.DialogFragment)void",
+          "truewatcher.tower.EditPointActivity.showEditTextDialog(android.support.v4.app.DialogFragment)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.onConfirmationNegative(int)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.onConfirmationPositive(int)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.onCreate(android.os.Bundle)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)android.view.View",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.onEditTextPositive(int, java.lang.String)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.onOptionsItemSelected(android.view.MenuItem)boolean",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.onPause()void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.<instance_field_initializations>()void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.exit(java.lang.String)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.extractCaller()java.lang.String",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.extractId()int",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.offerEditText(int, int, java.lang.String)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.requestConfirmation(int, int)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.<init>()void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment.<clinit>()void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Editor.adoptPoint(int)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Editor.findCellCoords()void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Editor.getPoint()truewatcher.tower.Point",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Editor.onPointavailable(truewatcher.tower.Point)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Editor.toggleProtect()void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Editor.tryDeleteCurrentPoint()boolean",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Editor.updateComment(java.lang.String)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Editor.updateNote()void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Editor.<instance_field_initializations>()void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Editor.<init>()void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Viewer.adjustVisibility()void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Viewer.alert(java.lang.String)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Viewer.fillForm(truewatcher.tower.Point)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Viewer.getNote()java.lang.String",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Viewer.getTvAlert()android.widget.TextView",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Viewer.getTvNull()android.widget.TextView",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Viewer.setListeners(truewatcher.tower.EditPointActivity$EditPointFragment$Editor)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Viewer.<instance_field_initializations>()void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Viewer.ne(int)java.lang.String",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Viewer.ne(java.lang.String)java.lang.String",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Viewer.<init>(android.view.View)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Viewer$1.onClick(android.view.View)void",
+          "truewatcher.tower.EditPointActivity$EditPointFragment$Viewer$1.<init>()void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "truewatcher.tower.EditPointActivity.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "truewatcher.tower.FileActivity.createFragment()android.support.v4.app.Fragment",
+          "truewatcher.tower.FileActivity.onCreateOptionsMenu(android.view.Menu)boolean",
+          "truewatcher.tower.FileActivity.onOptionsItemSelected(android.view.MenuItem)boolean",
+          "truewatcher.tower.FileActivity$FileFragment.onCreate(android.os.Bundle)void",
+          "truewatcher.tower.FileActivity$FileFragment.onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater)void",
+          "truewatcher.tower.FileActivity$FileFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)android.view.View",
+          "truewatcher.tower.FileActivity$FileFragment.onItemSelected(android.widget.AdapterView, android.view.View, int, long)void",
+          "truewatcher.tower.FileActivity$FileFragment.onNothingSelected(android.widget.AdapterView)void",
+          "truewatcher.tower.FileActivity$FileFragment.onOptionsItemSelected(android.view.MenuItem)boolean",
+          "truewatcher.tower.FileActivity$FileFragment.<instance_field_initializations>()void",
+          "truewatcher.tower.FileActivity$FileFragment.addAdapter(java.lang.String, android.widget.Spinner)void",
+          "truewatcher.tower.FileActivity$FileFragment.adoptCatalog()void",
+          "truewatcher.tower.FileActivity$FileFragment.assureExists(java.lang.String, java.lang.String)java.lang.String",
+          "truewatcher.tower.FileActivity$FileFragment.assureNotExists(java.lang.String, java.lang.String)java.lang.String",
+          "truewatcher.tower.FileActivity$FileFragment.go(java.lang.String, java.lang.String)java.lang.String",
+          "truewatcher.tower.FileActivity$FileFragment.setRegistryMyFile(java.lang.String)void",
+          "truewatcher.tower.FileActivity$FileFragment.<init>()void",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.alert(java.lang.String)void",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.exportAct()java.lang.String",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.exportMode()java.lang.String",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.getExportFile()java.lang.String",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.getExportFrom()int",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.getExportUntil()int",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.getRemoveExported()boolean",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.getSpinnerDirCsv()android.widget.Spinner",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.getSpinnerDirGpx()android.widget.Spinner",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.setListeners(android.widget.AdapterView$OnItemSelectedListener)void",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.showMyFolder(java.lang.String)void",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.showStat(java.lang.String, truewatcher.tower.U$Summary)void",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.showStat(java.lang.String, truewatcher.tower.U$Summary, int, java.lang.String)void",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.<instance_field_initializations>()void",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.adjustSpinnerVisibility(java.lang.String)void",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.adjustVisibility(java.lang.String)void",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.getAct(android.widget.RadioGroup)void",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.getMode(android.widget.RadioGroup)void",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer.<init>(android.view.View)void",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer$1.onCheckedChanged(android.widget.RadioGroup, int)void",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer$1.<init>()void",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer$2.onCheckedChanged(android.widget.RadioGroup, int)void",
+          "truewatcher.tower.FileActivity$FileFragment$Viewer$2.<init>()void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "truewatcher.tower.FileActivity.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "truewatcher.tower.ListActivity.createFragment()android.support.v4.app.Fragment",
+          "truewatcher.tower.ListActivity.onActivityResult(int, int, android.content.Intent)void",
+          "truewatcher.tower.ListActivity.onCreateOptionsMenu(android.view.Menu)boolean",
+          "truewatcher.tower.ListActivity.onOptionsItemSelected(android.view.MenuItem)boolean",
+          "truewatcher.tower.ListActivity.showConfirmationDialog(android.support.v4.app.DialogFragment)void",
+          "truewatcher.tower.ListActivity$ListPointsFragment.onActivityResult(int, int, android.content.Intent)void",
+          "truewatcher.tower.ListActivity$ListPointsFragment.onConfirmationNegative(int)void",
+          "truewatcher.tower.ListActivity$ListPointsFragment.onConfirmationPositive(int)void",
+          "truewatcher.tower.ListActivity$ListPointsFragment.onCreate(android.os.Bundle)void",
+          "truewatcher.tower.ListActivity$ListPointsFragment.onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater)void",
+          "truewatcher.tower.ListActivity$ListPointsFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)android.view.View",
+          "truewatcher.tower.ListActivity$ListPointsFragment.onOptionsItemSelected(android.view.MenuItem)boolean",
+          "truewatcher.tower.ListActivity$ListPointsFragment.onResume()void",
+          "truewatcher.tower.ListActivity$ListPointsFragment.<instance_field_initializations>()void",
+          "truewatcher.tower.ListActivity$ListPointsFragment.adoptChanges()void",
+          "truewatcher.tower.ListActivity$ListPointsFragment.requestConfirmation(int, int)void",
+          "truewatcher.tower.ListActivity$ListPointsFragment.trySavePoints()void",
+          "truewatcher.tower.ListActivity$ListPointsFragment.<init>()void",
+          "truewatcher.tower.ListActivity$ListPointsFragment.<clinit>()void",
+          "truewatcher.tower.ListActivity$ListPointsFragment$1.onItemClick(android.widget.AdapterView, android.view.View, int, long)void",
+          "truewatcher.tower.ListActivity$ListPointsFragment$1.<init>()void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "truewatcher.tower.ListActivity.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "truewatcher.tower.MainActivity.createFragment()android.support.v4.app.Fragment",
+          "truewatcher.tower.MainActivity.onCreateOptionsMenu(android.view.Menu)boolean",
+          "truewatcher.tower.MainActivity.onOptionsItemSelected(android.view.MenuItem)boolean",
+          "truewatcher.tower.MainActivity$MainPageFragment.onCreate(android.os.Bundle)void",
+          "truewatcher.tower.MainActivity$MainPageFragment.onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater)void",
+          "truewatcher.tower.MainActivity$MainPageFragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)android.view.View",
+          "truewatcher.tower.MainActivity$MainPageFragment.onDestroy()void",
+          "truewatcher.tower.MainActivity$MainPageFragment.onOptionsItemSelected(android.view.MenuItem)boolean",
+          "truewatcher.tower.MainActivity$MainPageFragment.onPause()void",
+          "truewatcher.tower.MainActivity$MainPageFragment.onResume()void",
+          "truewatcher.tower.MainActivity$MainPageFragment.onTrackpointAvailable(truewatcher.tower.Trackpoint)void",
+          "truewatcher.tower.MainActivity$MainPageFragment.<instance_field_initializations>()void",
+          "truewatcher.tower.MainActivity$MainPageFragment.findPointNearCursor()int",
+          "truewatcher.tower.MainActivity$MainPageFragment.loadCurrentTrack()void",
+          "truewatcher.tower.MainActivity$MainPageFragment.loadStoredPoints()void",
+          "truewatcher.tower.MainActivity$MainPageFragment.<init>()void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "truewatcher.tower.MainActivity.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "truewatcher.tower.PreferencesActivity.onCreateOptionsMenu(android.view.Menu)boolean",
+          "truewatcher.tower.PreferencesActivity.onOptionsItemSelected(android.view.MenuItem)boolean",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment.onCreatePreferences(android.os.Bundle, java.lang.String)void",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment.onPause()void",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment.onResume()void",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment.onSharedPreferenceChanged(android.content.SharedPreferences, java.lang.String)void",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment.<instance_field_initializations>()void",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment.adjustApiKeys(java.lang.String)void",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment.adjustPrefsScreen()void",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment.alert(java.lang.String)void",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment.prepareEditTextPref(java.lang.String)android.support.v7.preference.EditTextPreference",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment.prepareListPreference(java.lang.String)android.support.v7.preference.ListPreference",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment.prepareSwitchPref(java.lang.String)android.support.v7.preference.SwitchPreferenceCompat",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment.rollbackIfNoKey(java.lang.String, java.lang.String)java.lang.String",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment.syncCurrentTrack(boolean)void",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment.tryCheckKeys(java.lang.String, java.lang.String)truewatcher.tower.PreferencesActivity$PreferencesFragment$KeyCheck",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment.<init>()void",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment$KeyCheck.<instance_field_initializations>()void",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment$KeyCheck.<init>(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)void",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment$KeyCheck[].clone()truewatcher.tower.PreferencesActivity$PreferencesFragment$KeyCheck[]",
+          "truewatcher.tower.PreferencesActivity$PreferencesFragment$KeyCheck[].<init>(int)void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "truewatcher.tower.PreferencesActivity.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "truewatcher.tower.SingleFragmentActivity.createFragment()android.support.v4.app.Fragment"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "truewatcher.tower.SingleFragmentActivity.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [
+          "truewatcher.tower.Tests1.createFragment()android.support.v4.app.Fragment",
+          "truewatcher.tower.Tests1$Tests1Fragment.onCreate(android.os.Bundle)void",
+          "truewatcher.tower.Tests1$Tests1Fragment.onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)android.view.View",
+          "truewatcher.tower.Tests1$Tests1Fragment.onResume()void",
+          "truewatcher.tower.Tests1$Tests1Fragment.<instance_field_initializations>()void",
+          "truewatcher.tower.Tests1$Tests1Fragment.getTestCsv1()java.lang.String",
+          "truewatcher.tower.Tests1$Tests1Fragment.getTestCsv1(int)java.lang.String",
+          "truewatcher.tower.Tests1$Tests1Fragment.getTestCsv2(int)java.lang.String",
+          "truewatcher.tower.Tests1$Tests1Fragment.getTestCsv3(int)java.lang.String",
+          "truewatcher.tower.Tests1$Tests1Fragment.getTestTrackCsv()java.lang.String",
+          "truewatcher.tower.Tests1$Tests1Fragment.getTestTrackGpx()java.lang.String",
+          "truewatcher.tower.Tests1$Tests1Fragment.testAssertions()void",
+          "truewatcher.tower.Tests1$Tests1Fragment.testCsvExport()void",
+          "truewatcher.tower.Tests1$Tests1Fragment.testCsvImport()truewatcher.tower.PointList",
+          "truewatcher.tower.Tests1$Tests1Fragment.testDistances()void",
+          "truewatcher.tower.Tests1$Tests1Fragment.testDistancesPresentation()void",
+          "truewatcher.tower.Tests1$Tests1Fragment.testFileUtilities()void",
+          "truewatcher.tower.Tests1$Tests1Fragment.testGpxConversions()void",
+          "truewatcher.tower.Tests1$Tests1Fragment.testListRotation()void",
+          "truewatcher.tower.Tests1$Tests1Fragment.testSavedFiles()void",
+          "truewatcher.tower.Tests1$Tests1Fragment.testSavedFiles2()void",
+          "truewatcher.tower.Tests1$Tests1Fragment.testTimeConversion()void",
+          "truewatcher.tower.Tests1$Tests1Fragment.testTrackUtils()void",
+          "truewatcher.tower.Tests1$Tests1Fragment.<init>()void"
+        ],
+        "before": [],
+        "default_views": [],
+        "entry_point": "truewatcher.tower.Tests1.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.app.AliasActivity.onCreate(android.os.Bundle)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "http"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.preference.PreferenceActivity.onActivityResult(int, int, android.content.Intent)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "mobile_other_app"
+            ],
+            "taint_subtypes": true
+          },
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "mobile_other_app"
+            ],
+            "taint_subtypes": true
+          },
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "mobile_other_app"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.preference.PreferenceFragment.onActivityResult(int, int, android.content.Intent)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "mobile_other_app"
+            ],
+            "taint_subtypes": true
+          },
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "mobile_other_app"
+            ],
+            "taint_subtypes": true
+          },
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "mobile_other_app"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [],
+        "before": [],
+        "default_views": [],
+        "entry_point": "android.support.v4.app.FragmentActivity.onActivityResult(int, int, android.content.Intent)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "mobile_other_app"
+            ],
+            "taint_subtypes": true
+          },
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "mobile_other_app"
+            ],
+            "taint_subtypes": true
+          },
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "mobile_other_app"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      },
+      {
+        "after": [],
+        "before": [],
+        "default_views": [],
+        "entry_point": "truewatcher.tower.ListActivity.onActivityResult(int, int, android.content.Intent)void",
+        "param_taint": [
+          null,
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "mobile_other_app"
+            ],
+            "taint_subtypes": true
+          },
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "mobile_other_app"
+            ],
+            "taint_subtypes": true
+          },
+          {
+            "element_kind": "FIELDS",
+            "taint_all_elements_except": [],
+            "taint_kinds": [
+              "mobile_other_app"
+            ],
+            "taint_subtypes": true
+          }
+        ],
+        "return": "NORMAL"
+      }
+    ],
+    "format_version": 16,
+    "language": "any",
+    "type": "Coverity analysis configuration"
+  }
+]
+
+// Coverity-generated framework configuration
+//    created 2020-Sep-04 14:56:24
+//    cov-analyze external version 2020.06 internal version 6fbf2d48ad p-trail-push-1389

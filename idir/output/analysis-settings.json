@@ -1,0 +1,10 @@
+{
+  "covAnalyzeArgs" : [
+    "--fb-include",
+    "coverity-default",
+    "--all",
+    "--android-security"
+  ],
+  "fileOptions" : [],
+  "fileCheckerOptions" : []
+}

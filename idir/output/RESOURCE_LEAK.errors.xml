@@ -1,0 +1,48 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>RESOURCE_LEAK</checker>
+<type>resource_leak</type>
+<subtype>exceptional_path</subtype>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.readAsset(android.content.Context, java.lang.String)</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>alloc_fn</tag>
+<description>{CovLStrv2{{t{A new resource is returned from allocation method {0}.}{{code{open}}}}}}</description>
+<line>305</line>
+</event>
+<event>
+<tag>var_assign</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = resource returned from {1}.}{{code{stream}}}{{code{context.getResources().getAssets().open(fileName)}}}}}}</description>
+<line>305</line>
+</event>
+<event>
+<tag>noescape</tag>
+<description>{CovLStrv2{{t{Resource {0} is not closed or saved in {1}.}{{code{stream}}}{{code{available}}}}}}</description>
+<line>306</line>
+</event>
+<event>
+<tag>noescape</tag>
+<description>{CovLStrv2{{t{Resource {0} is not closed or saved in {1}.}{{code{stream}}}{{code{read}}}}}}</description>
+<line>308</line>
+</event>
+<event>
+<tag>throw_uncaught</tag>
+<description>{CovLStrv2{{t{Throwing {0} (or subclass) from call to {1}; exiting method with uncaught exception.}{{code{java.io.IOException}}}{{code{read}}}}}}</description>
+<line>308</line>
+<path_event>
+<jump>true</jump>
+<exception>true</exception>
+</path_event>
+</event>
+<event>
+<main>true</main>
+<tag>leaked_resource</tag>
+<description>{CovLStrv2{{t{Variable {0} going out of scope leaks the resource it refers to.}{{code{stream}}}}}}</description>
+<line>308</line>
+</event>
+<extra>open</extra>
+<subcategory>exceptional_path</subcategory>
+</error>

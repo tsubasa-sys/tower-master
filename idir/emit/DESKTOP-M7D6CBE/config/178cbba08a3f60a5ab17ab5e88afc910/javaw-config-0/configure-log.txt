@@ -1,0 +1,21 @@
+**** BEGIN PROBE run_test_sanity ****
+**** END PROBE run_test_sanity ****
+**** BEGIN PROBE get_version_switch_output ****
+Version switch: -version
+**** BEGIN FILE source file: C:/Users/tsubasa/AppData/Local/Temp/cov-tsubasa/3cdfea5a033d1e0ddc39d575d66bbe1c/cov-tsubasa/77ecefa37cb331f4633de43789814613/test.java
+int main() {} 
+
+**** END source file ***
+pipe_command: C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot\bin\javaw.exe -version 
+pipe_commands starting: C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot\bin\javaw.exe -version 
+**** BEGIN FILE output: C:/Users/tsubasa/AppData/Local/Temp/cov-tsubasa/3cdfea5a033d1e0ddc39d575d66bbe1c/cov-tsubasa/77ecefa37cb331f4633de43789814613/version_output
+
+**** END FILE output ***
+**** BEGIN FILE error: 
+openjdk version "11.0.8" 2020-07-14
+OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.8+10)
+OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.8+10, mixed mode)
+
+**** END FILE error ***
+**** END PROBE get_version_switch_output ****
+Compiler version found: 11

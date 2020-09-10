@@ -1,0 +1,24 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>OVERFLOW_BEFORE_WIDEN</checker>
+<type>overflow_before_widen</type>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/TrackListener.java</file>
+<function>truewatcher.tower.TrackListener.startListening(android.content.Context)</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<main>true</main>
+<tag>overflow_before_widen</tag>
+<description>{CovLStrv2{{t{Potentially overflowing expression {0} with type {1} ({2} bits, signed) is evaluated using {3}-bit arithmetic, and then used in a context that expects an expression of type {4} ({5} bits, signed).}{{code{1000 * mRg.getInt(&quot;gpsMinDelayS&quot;)}}}{{code{int}}}{32}{32}{{code{long}}}{64}}}}</description>
+<line>37</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{{t{To avoid overflow, cast either {0} or {1} to type {2}.}{{code{1000}}}{{code{mRg.getInt(&quot;gpsMinDelayS&quot;)}}}{{code{long}}}}}}</description>
+<line>37</line>
+</event>
+<extra>getInt</extra>
+<subcategory>none</subcategory>
+</error>

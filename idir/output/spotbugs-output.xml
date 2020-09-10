@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0" sequence="0" timestamp="1599198988499" analysisTimestamp="1599198994446" release="">
+  <Project projectName="coverityEmit">
+    <Jar>C:/Users/tsubasa/Downloads/tower-master/idir/output/bytecode-0/Java/coverity_ac.jar</Jar>
+    <AuxClasspathEntry>C:/Users/tsubasa/Downloads/tower-master/idir/output/bytecode-0/Java/coverity_cp_n_jars.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="a54e9d7d20b0148f96ea43e1040d30ee" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Dead store to -[0]-.]--[res]-]-</LongMessage>
+    <Class classname="truewatcher.tower.AddPointActivity$AddPointFragment$Adder" primary="true">
+      <SourceLine classname="truewatcher.tower.AddPointActivity$AddPointFragment$Adder" start="96" end="183" sourcefile="AddPointActivity.java" sourcepath="truewatcher/tower/AddPointActivity.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.AddPointActivity$AddPointFragment$Adder]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.AddPointActivity$AddPointFragment$Adder" name="go" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.AddPointActivity$AddPointFragment$Adder" start="99" end="125" startBytecode="0" endBytecode="126" sourcefile="AddPointActivity.java" sourcepath="truewatcher/tower/AddPointActivity.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.AddPointActivity$AddPointFragment$Adder.go()]-]-</Message>
+    </Method>
+    <LocalVariable name="res" register="6" pc="291" role="LOCAL_VARIABLE_NAMED">
+      <Message>-[CovLStr-[v1]--[Local variable named -[0]-]--[res]-]-</Message>
+    </LocalVariable>
+    <SourceLine classname="truewatcher.tower.AddPointActivity$AddPointFragment$Adder" primary="true" start="124" end="124" startBytecode="289" endBytecode="289" sourcefile="AddPointActivity.java" sourcepath="truewatcher/tower/AddPointActivity.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="res"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" instanceHash="2f4077db15bfea330f3fa8a2bbbf5b7d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Should -[0]- be a _static_ inner class?]--[truewatcher.tower.AddPointActivity$AddPointFragment$PointRenderer]-]-</LongMessage>
+    <Class classname="truewatcher.tower.AddPointActivity$AddPointFragment$PointRenderer" primary="true">
+      <SourceLine classname="truewatcher.tower.AddPointActivity$AddPointFragment$PointRenderer" start="189" end="213" sourcefile="AddPointActivity.java" sourcepath="truewatcher/tower/AddPointActivity.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.AddPointActivity$AddPointFragment$PointRenderer]-]-</Message>
+    </Class>
+    <SourceLine classname="truewatcher.tower.AddPointActivity$AddPointFragment$PointRenderer" start="189" end="213" sourcefile="AddPointActivity.java" sourcepath="truewatcher/tower/AddPointActivity.java" synthetic="true">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="583b4583f888b90c8941a4b98674192" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Dead store to -[0]-.]--[cellInfos]-]-</LongMessage>
+    <Class classname="truewatcher.tower.CellInformer" primary="true">
+      <SourceLine classname="truewatcher.tower.CellInformer" start="20" end="209" sourcefile="CellInformer.java" sourcepath="truewatcher/tower/CellInformer.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.CellInformer]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.CellInformer" name="getInfo" signature="()Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.CellInformer" start="124" end="140" startBytecode="0" endBytecode="65" sourcefile="CellInformer.java" sourcepath="truewatcher/tower/CellInformer.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.CellInformer.getInfo()]-]-</Message>
+    </Method>
+    <LocalVariable name="cellInfos" register="2" pc="35" role="LOCAL_VARIABLE_NAMED">
+      <Message>-[CovLStr-[v1]--[Local variable named -[0]-]--[cellInfos]-]-</Message>
+    </LocalVariable>
+    <SourceLine classname="truewatcher.tower.CellInformer" primary="true" start="126" end="126" startBytecode="34" endBytecode="34" sourcefile="CellInformer.java" sourcepath="truewatcher/tower/CellInformer.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="cellInfos"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DMI_INVOKING_TOSTRING_ON_ARRAY" priority="2" rank="10" abbrev="USELESS_STRING" category="CORRECTNESS" instanceHash="e2017886324802ce94efbd7f96afc0f9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Invocation of toString on -[0]-.]--[Throwable.getStackTrace()]-]-</LongMessage>
+    <Class classname="truewatcher.tower.CellInformer" primary="true">
+      <SourceLine classname="truewatcher.tower.CellInformer" start="20" end="209" sourcefile="CellInformer.java" sourcepath="truewatcher/tower/CellInformer.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.CellInformer]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.CellInformer" name="getMockParams" signature="()Lorg/json/JSONObject;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.CellInformer" start="196" end="209" startBytecode="0" endBytecode="238" sourcefile="CellInformer.java" sourcepath="truewatcher/tower/CellInformer.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.CellInformer.getMockParams()]-]-</Message>
+    </Method>
+    <Method classname="java.lang.Throwable" name="getStackTrace" signature="()[Ljava/lang/StackTraceElement;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.lang.Throwable" start="539" end="539" startBytecode="0" endBytecode="51" sourcefile="Throwable.java" sourcepath="java/lang/Throwable.java"/>
+      <Message>-[CovLStr-[v1]--[Return value of -[0]- of type -[1]-]--[Throwable.getStackTrace()]--[StackTraceElement[]]-]-</Message>
+    </Method>
+    <SourceLine classname="truewatcher.tower.CellInformer" primary="true" start="205" end="205" startBytecode="78" endBytecode="78" sourcefile="CellInformer.java" sourcepath="truewatcher/tower/CellInformer.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="1c8ef8014206af2aa347de12f8558224" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Dead store to -[0]-.]--[rd]-]-</LongMessage>
+    <Class classname="truewatcher.tower.CellResolverFactory$MylnikovResolver" primary="true">
+      <SourceLine classname="truewatcher.tower.CellResolverFactory$MylnikovResolver" start="25" end="58" sourcefile="CellResolverFactory.java" sourcepath="truewatcher/tower/CellResolverFactory.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.CellResolverFactory$MylnikovResolver]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.CellResolverFactory$MylnikovResolver" name="getResolvedData" signature="(Ljava/lang/String;)Lorg/json/JSONObject;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.CellResolverFactory$MylnikovResolver" start="46" end="58" startBytecode="0" endBytecode="84" sourcefile="CellResolverFactory.java" sourcepath="truewatcher/tower/CellResolverFactory.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.CellResolverFactory$MylnikovResolver.getResolvedData(String)]-]-</Message>
+    </Method>
+    <LocalVariable name="rd" register="2" pc="8" role="LOCAL_VARIABLE_NAMED">
+      <Message>-[CovLStr-[v1]--[Local variable named -[0]-]--[rd]-]-</Message>
+    </LocalVariable>
+    <SourceLine classname="truewatcher.tower.CellResolverFactory$MylnikovResolver" primary="true" start="46" end="46" startBytecode="7" endBytecode="7" sourcefile="CellResolverFactory.java" sourcepath="truewatcher/tower/CellResolverFactory.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="rd"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="ce1bfab830c8cec80844952d3e5648b8" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Dead store to -[0]-.]--[rd]-]-</LongMessage>
+    <Class classname="truewatcher.tower.CellResolverFactory$YandexResolver" primary="true">
+      <SourceLine classname="truewatcher.tower.CellResolverFactory$YandexResolver" start="62" end="113" sourcefile="CellResolverFactory.java" sourcepath="truewatcher/tower/CellResolverFactory.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.CellResolverFactory$YandexResolver]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.CellResolverFactory$YandexResolver" name="getResolvedData" signature="(Ljava/lang/String;)Lorg/json/JSONObject;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.CellResolverFactory$YandexResolver" start="93" end="113" startBytecode="0" endBytecode="122" sourcefile="CellResolverFactory.java" sourcepath="truewatcher/tower/CellResolverFactory.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.CellResolverFactory$YandexResolver.getResolvedData(String)]-]-</Message>
+    </Method>
+    <LocalVariable name="rd" register="2" pc="8" role="LOCAL_VARIABLE_NAMED">
+      <Message>-[CovLStr-[v1]--[Local variable named -[0]-]--[rd]-]-</Message>
+    </LocalVariable>
+    <SourceLine classname="truewatcher.tower.CellResolverFactory$YandexResolver" primary="true" start="93" end="93" startBytecode="7" endBytecode="7" sourcefile="CellResolverFactory.java" sourcepath="truewatcher/tower/CellResolverFactory.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="rd"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="8ff15f11ecc57f6df2f17f40c09e6b7b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Unread field: -[0]-.]--[truewatcher.tower.ConfirmationDialogFragment.mMe]-]-</LongMessage>
+    <Class classname="truewatcher.tower.ConfirmationDialogFragment" primary="true">
+      <SourceLine classname="truewatcher.tower.ConfirmationDialogFragment" start="11" end="58" sourcefile="ConfirmationDialogFragment.java" sourcepath="truewatcher/tower/ConfirmationDialogFragment.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.ConfirmationDialogFragment]-]-</Message>
+    </Class>
+    <Field classname="truewatcher.tower.ConfirmationDialogFragment" name="mMe" signature="Landroid/support/v4/app/DialogFragment;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.ConfirmationDialogFragment" sourcefile="ConfirmationDialogFragment.java" sourcepath="truewatcher/tower/ConfirmationDialogFragment.java">
+        <Message>-[CovLStr-[v1]--[In this file]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[Field -[0]-]--[truewatcher.tower.ConfirmationDialogFragment.mMe]-]-</Message>
+    </Field>
+    <SourceLine classname="truewatcher.tower.ConfirmationDialogFragment" primary="true" start="19" end="19" startBytecode="6" endBytecode="6" sourcefile="ConfirmationDialogFragment.java" sourcepath="truewatcher/tower/ConfirmationDialogFragment.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="BC_UNCONFIRMED_CAST" priority="2" rank="17" abbrev="BC" category="STYLE" instanceHash="3766ce9065c7bef8f0cf585e79b744bc" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Unchecked/unconfirmed cast from -[0]- to -[1]-.]--[android.view.View]--[android.widget.RadioButton]-]-</LongMessage>
+    <Class classname="truewatcher.tower.DeeperRadioGroup$1" primary="true">
+      <SourceLine classname="truewatcher.tower.DeeperRadioGroup$1" start="26" end="33" sourcefile="DeeperRadioGroup.java" sourcepath="truewatcher/tower/DeeperRadioGroup.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.DeeperRadioGroup$1]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.DeeperRadioGroup$1" name="onClick" signature="(Landroid/view/View;)V" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.DeeperRadioGroup$1" start="29" end="33" startBytecode="0" endBytecode="32" sourcefile="DeeperRadioGroup.java" sourcepath="truewatcher/tower/DeeperRadioGroup.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.DeeperRadioGroup$1.onClick(View)]-]-</Message>
+    </Method>
+    <Type descriptor="Landroid/view/View;" role="TYPE_FOUND">
+      <SourceLine classname="android.view.View" start="718" end="11110" sourcefile="View.java" sourcepath="android/view/View.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[Actual type -[0]-]--[android.view.View]-]-</Message>
+    </Type>
+    <Type descriptor="Landroid/widget/RadioButton;" role="TYPE_EXPECTED">
+      <SourceLine classname="android.widget.RadioButton" start="50" end="66" sourcefile="RadioButton.java" sourcepath="android/widget/RadioButton.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[Expected -[0]-]--[android.widget.RadioButton]-]-</Message>
+    </Type>
+    <LocalVariable name="v" register="1" pc="0" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>-[CovLStr-[v1]--[Value loaded from -[0]-]--[v]-]-</Message>
+    </LocalVariable>
+    <SourceLine classname="truewatcher.tower.DeeperRadioGroup$1" primary="true" start="29" end="29" startBytecode="1" endBytecode="1" sourcefile="DeeperRadioGroup.java" sourcepath="truewatcher/tower/DeeperRadioGroup.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="7b237cfea6a775fbeb0c8a3c0fa2bfba" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Unread field: -[0]-.]--[truewatcher.tower.EditTextDialogFragment.mMe]-]-</LongMessage>
+    <Class classname="truewatcher.tower.EditTextDialogFragment" primary="true">
+      <SourceLine classname="truewatcher.tower.EditTextDialogFragment" start="17" end="84" sourcefile="EditTextDialogFragment.java" sourcepath="truewatcher/tower/EditTextDialogFragment.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.EditTextDialogFragment]-]-</Message>
+    </Class>
+    <Field classname="truewatcher.tower.EditTextDialogFragment" name="mMe" signature="Landroid/support/v4/app/DialogFragment;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.EditTextDialogFragment" sourcefile="EditTextDialogFragment.java" sourcepath="truewatcher/tower/EditTextDialogFragment.java">
+        <Message>-[CovLStr-[v1]--[In this file]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[Field -[0]-]--[truewatcher.tower.EditTextDialogFragment.mMe]-]-</Message>
+    </Field>
+    <SourceLine classname="truewatcher.tower.EditTextDialogFragment" primary="true" start="24" end="24" startBytecode="6" endBytecode="6" sourcefile="EditTextDialogFragment.java" sourcepath="truewatcher/tower/EditTextDialogFragment.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="508edbbb8422206698810a066a60a18b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Unread field: -[0]-.]--[truewatcher.tower.FileActivity$FileFragment$Viewer.lTop]-]-</LongMessage>
+    <Class classname="truewatcher.tower.FileActivity$FileFragment$Viewer" primary="true">
+      <SourceLine classname="truewatcher.tower.FileActivity$FileFragment$Viewer" start="258" end="454" sourcefile="FileActivity.java" sourcepath="truewatcher/tower/FileActivity.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.FileActivity$FileFragment$Viewer]-]-</Message>
+    </Class>
+    <Field classname="truewatcher.tower.FileActivity$FileFragment$Viewer" name="lTop" signature="Landroid/widget/LinearLayout;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.FileActivity$FileFragment$Viewer" sourcefile="FileActivity.java" sourcepath="truewatcher/tower/FileActivity.java">
+        <Message>-[CovLStr-[v1]--[In this file]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[Field -[0]-]--[truewatcher.tower.FileActivity$FileFragment$Viewer.lTop]-]-</Message>
+    </Field>
+    <SourceLine classname="truewatcher.tower.FileActivity$FileFragment$Viewer" primary="true" start="273" end="273" startBytecode="77" endBytecode="77" sourcefile="FileActivity.java" sourcepath="truewatcher/tower/FileActivity.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="97240c224b9825d62fc845f020a6ff8f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[-[0]- concatenates strings using + in a loop.]--[truewatcher.tower.GpxHelper.csv2gpx(String)]-]-</LongMessage>
+    <Class classname="truewatcher.tower.GpxHelper" primary="true">
+      <SourceLine classname="truewatcher.tower.GpxHelper" start="17" end="419" sourcefile="GpxHelper.java" sourcepath="truewatcher/tower/GpxHelper.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.GpxHelper]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.GpxHelper" name="csv2gpx" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.GpxHelper" start="339" end="362" startBytecode="0" endBytecode="514" sourcefile="GpxHelper.java" sourcepath="truewatcher/tower/GpxHelper.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.GpxHelper.csv2gpx(String)]-]-</Message>
+    </Method>
+    <SourceLine classname="truewatcher.tower.GpxHelper" primary="true" start="358" end="358" startBytecode="180" endBytecode="180" sourcefile="GpxHelper.java" sourcepath="truewatcher/tower/GpxHelper.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="345daf1eefe01221632ea96dd81e78c0" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Found reliance on default encoding: -[0]-.]--[new java.io.InputStreamReader(InputStream)]-]-</LongMessage>
+    <Class classname="truewatcher.tower.HttpGetRequest" primary="true">
+      <SourceLine classname="truewatcher.tower.HttpGetRequest" start="16" end="77" sourcefile="HttpGetRequest.java" sourcepath="truewatcher/tower/HttpGetRequest.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.HttpGetRequest]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.HttpGetRequest" name="doInBackground" signature="([Ljava/lang/String;)Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.HttpGetRequest" start="28" end="71" startBytecode="0" endBytecode="483" sourcefile="HttpGetRequest.java" sourcepath="truewatcher/tower/HttpGetRequest.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.HttpGetRequest.doInBackground(String[])]-]-</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="69" end="69" startBytecode="0" endBytecode="65" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>-[CovLStr-[v1]--[Called method -[0]-]--[new java.io.InputStreamReader(InputStream)]-]-</Message>
+    </Method>
+    <SourceLine classname="truewatcher.tower.HttpGetRequest" primary="true" start="47" end="47" startBytecode="61" endBytecode="61" sourcefile="HttpGetRequest.java" sourcepath="truewatcher/tower/HttpGetRequest.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="ac7881790790d2ad5b5e8003e4d4f3db" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Found reliance on default encoding: -[0]-.]--[new java.io.InputStreamReader(InputStream)]-]-</LongMessage>
+    <Class classname="truewatcher.tower.HttpPostRequest" primary="true">
+      <SourceLine classname="truewatcher.tower.HttpPostRequest" start="18" end="80" sourcefile="HttpPostRequest.java" sourcepath="truewatcher/tower/HttpPostRequest.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.HttpPostRequest]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.HttpPostRequest" name="doInBackground" signature="([Ljava/lang/String;)Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.HttpPostRequest" start="40" end="74" startBytecode="0" endBytecode="611" sourcefile="HttpPostRequest.java" sourcepath="truewatcher/tower/HttpPostRequest.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.HttpPostRequest.doInBackground(String[])]-]-</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="69" end="69" startBytecode="0" endBytecode="65" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>-[CovLStr-[v1]--[Called method -[0]-]--[new java.io.InputStreamReader(InputStream)]-]-</Message>
+    </Method>
+    <SourceLine classname="truewatcher.tower.HttpPostRequest" primary="true" start="64" end="64" startBytecode="143" endBytecode="143" sourcefile="HttpPostRequest.java" sourcepath="truewatcher/tower/HttpPostRequest.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="c05626487ab29e79874e304cc4317c4c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[-[0]- concatenates strings using + in a loop.]--[truewatcher.tower.HttpPostRequest.doInBackground(String[])]-]-</LongMessage>
+    <Class classname="truewatcher.tower.HttpPostRequest" primary="true">
+      <SourceLine classname="truewatcher.tower.HttpPostRequest" start="18" end="80" sourcefile="HttpPostRequest.java" sourcepath="truewatcher/tower/HttpPostRequest.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.HttpPostRequest]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.HttpPostRequest" name="doInBackground" signature="([Ljava/lang/String;)Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.HttpPostRequest" start="40" end="74" startBytecode="0" endBytecode="611" sourcefile="HttpPostRequest.java" sourcepath="truewatcher/tower/HttpPostRequest.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.HttpPostRequest.doInBackground(String[])]-]-</Message>
+    </Method>
+    <SourceLine classname="truewatcher.tower.HttpPostRequest" primary="true" start="65" end="65" startBytecode="162" endBytecode="162" sourcefile="HttpPostRequest.java" sourcepath="truewatcher/tower/HttpPostRequest.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE" instanceHash="3dda279b5227035457bf94a4908f0842" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[-[0]- makes inefficient use of keySet iterator instead of entrySet iterator.]--[truewatcher.tower.JsonHelper.toJSON(Object)]-]-</LongMessage>
+    <Class classname="truewatcher.tower.JsonHelper" primary="true">
+      <SourceLine classname="truewatcher.tower.JsonHelper" start="10" end="85" sourcefile="JsonHelper.java" sourcepath="truewatcher/tower/JsonHelper.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.JsonHelper]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.JsonHelper" name="toJSON" signature="(Ljava/lang/Object;)Ljava/lang/Object;" isStatic="true" primary="true">
+      <SourceLine classname="truewatcher.tower.JsonHelper" start="12" end="26" startBytecode="0" endBytecode="313" sourcefile="JsonHelper.java" sourcepath="truewatcher/tower/JsonHelper.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.JsonHelper.toJSON(Object)]-]-</Message>
+    </Method>
+    <SourceLine classname="truewatcher.tower.JsonHelper" primary="true" start="16" end="16" startBytecode="58" endBytecode="58" sourcefile="JsonHelper.java" sourcepath="truewatcher/tower/JsonHelper.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="1a216714b4aea483c6960be45ed179c5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Dead store to -[0]-.]--[edge2]-]-</LongMessage>
+    <Class classname="truewatcher.tower.Tests1$Tests1Fragment" primary="true">
+      <SourceLine classname="truewatcher.tower.Tests1$Tests1Fragment" start="26" end="673" sourcefile="Tests1.java" sourcepath="truewatcher/tower/Tests1.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.Tests1$Tests1Fragment]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.Tests1$Tests1Fragment" name="testListRotation" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.Tests1$Tests1Fragment" start="486" end="562" startBytecode="0" endBytecode="599" sourcefile="Tests1.java" sourcepath="truewatcher/tower/Tests1.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.Tests1$Tests1Fragment.testListRotation()]-]-</Message>
+    </Method>
+    <LocalVariable name="edge2" register="7" pc="603" role="LOCAL_VARIABLE_NAMED">
+      <Message>-[CovLStr-[v1]--[Local variable named -[0]-]--[edge2]-]-</Message>
+    </LocalVariable>
+    <SourceLine classname="truewatcher.tower.Tests1$Tests1Fragment" primary="true" start="517" end="517" startBytecode="601" endBytecode="601" sourcefile="Tests1.java" sourcepath="truewatcher/tower/Tests1.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="edge2"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" instanceHash="d42fea68fb2033f3e605b44e56018488" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Should -[0]- be a _static_ inner class?]--[truewatcher.tower.TrackActivity$TrackPageFragment$Viewer]-]-</LongMessage>
+    <Class classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" start="277" end="347" sourcefile="TrackActivity.java" sourcepath="truewatcher/tower/TrackActivity.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.TrackActivity$TrackPageFragment$Viewer]-]-</Message>
+    </Class>
+    <SourceLine classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" start="277" end="347" sourcefile="TrackActivity.java" sourcepath="truewatcher/tower/TrackActivity.java" synthetic="true">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="d20913dc285f3d69f2d6b0f477d62d15" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Unused field: -[0]-.]--[truewatcher.tower.TrackActivity$TrackPageFragment$Viewer.bRefresh]-]-</LongMessage>
+    <Class classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" start="277" end="347" sourcefile="TrackActivity.java" sourcepath="truewatcher/tower/TrackActivity.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.TrackActivity$TrackPageFragment$Viewer]-]-</Message>
+    </Class>
+    <Field classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" name="bRefresh" signature="Landroid/widget/Button;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" sourcefile="TrackActivity.java" sourcepath="truewatcher/tower/TrackActivity.java">
+        <Message>-[CovLStr-[v1]--[In this file]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[Field -[0]-]--[truewatcher.tower.TrackActivity$TrackPageFragment$Viewer.bRefresh]-]-</Message>
+    </Field>
+    <SourceLine classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" sourcefile="TrackActivity.java" sourcepath="truewatcher/tower/TrackActivity.java" synthetic="true">
+      <Message>-[CovLStr-[v1]--[In this file]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="ecabe7b2c02e2b3a7d699230f57bea89" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Unused field: -[0]-.]--[truewatcher.tower.TrackActivity$TrackPageFragment$Viewer.bSettings]-]-</LongMessage>
+    <Class classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" start="277" end="347" sourcefile="TrackActivity.java" sourcepath="truewatcher/tower/TrackActivity.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.TrackActivity$TrackPageFragment$Viewer]-]-</Message>
+    </Class>
+    <Field classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" name="bSettings" signature="Landroid/widget/Button;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" sourcefile="TrackActivity.java" sourcepath="truewatcher/tower/TrackActivity.java">
+        <Message>-[CovLStr-[v1]--[In this file]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[Field -[0]-]--[truewatcher.tower.TrackActivity$TrackPageFragment$Viewer.bSettings]-]-</Message>
+    </Field>
+    <SourceLine classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" sourcefile="TrackActivity.java" sourcepath="truewatcher/tower/TrackActivity.java" synthetic="true">
+      <Message>-[CovLStr-[v1]--[In this file]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE" instanceHash="7262df3497cd9210cbfc343cec5aea84" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Format string should use %n rather than \n.]-]-</LongMessage>
+    <Class classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" start="277" end="347" sourcefile="TrackActivity.java" sourcepath="truewatcher/tower/TrackActivity.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.TrackActivity$TrackPageFragment$Viewer]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" name="displayStorageStat" signature="(Ltruewatcher/tower/U$Summary2;)V" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" start="338" end="341" startBytecode="0" endBytecode="142" sourcefile="TrackActivity.java" sourcepath="truewatcher/tower/TrackActivity.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.TrackActivity$TrackPageFragment$Viewer.displayStorageStat(U$Summary2)]-]-</Message>
+    </Method>
+    <Method classname="java.lang.String" name="format" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="1973" end="1973" startBytecode="0" endBytecode="61" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>-[CovLStr-[v1]--[Called method -[0]-]--[String.format(String, Object[])]-]-</Message>
+    </Method>
+    <String value="%s:\n%d records, %d trackpoints in %d segments: \n%s" role="STRING_FORMAT_STRING">
+      <Message>-[CovLStr-[v1]--[Format string &quot;-[0]-&quot;]--[%s:\n%d records, %d trackpoints in %d segments: \n%s]-]-</Message>
+    </String>
+    <SourceLine classname="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" primary="true" start="338" end="338" startBytecode="52" endBytecode="52" sourcefile="TrackActivity.java" sourcepath="truewatcher/tower/TrackActivity.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE" instanceHash="53d2b28654ae70bf2c0d9210d1ecc3f5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Unread public/protected field: -[0]-.]--[truewatcher.tower.TrackListener.startUpdatesTime]-]-</LongMessage>
+    <Class classname="truewatcher.tower.TrackListener" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackListener" start="12" end="100" sourcefile="TrackListener.java" sourcepath="truewatcher/tower/TrackListener.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.TrackListener]-]-</Message>
+    </Class>
+    <Field classname="truewatcher.tower.TrackListener" name="startUpdatesTime" signature="J" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackListener" sourcefile="TrackListener.java" sourcepath="truewatcher/tower/TrackListener.java">
+        <Message>-[CovLStr-[v1]--[In this file]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[Field -[0]-]--[truewatcher.tower.TrackListener.startUpdatesTime]-]-</Message>
+    </Field>
+    <SourceLine classname="truewatcher.tower.TrackListener" primary="true" start="17" end="17" startBytecode="32" endBytecode="32" sourcefile="TrackListener.java" sourcepath="truewatcher/tower/TrackListener.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE" instanceHash="edbeeacc77b255a7e00ee3c7f3f73320" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Unread public/protected field: -[0]-.]--[truewatcher.tower.TrackListener.status]-]-</LongMessage>
+    <Class classname="truewatcher.tower.TrackListener" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackListener" start="12" end="100" sourcefile="TrackListener.java" sourcepath="truewatcher/tower/TrackListener.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.TrackListener]-]-</Message>
+    </Class>
+    <Field classname="truewatcher.tower.TrackListener" name="status" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackListener" sourcefile="TrackListener.java" sourcepath="truewatcher/tower/TrackListener.java">
+        <Message>-[CovLStr-[v1]--[In this file]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[Field -[0]-]--[truewatcher.tower.TrackListener.status]-]-</Message>
+    </Field>
+    <SourceLine classname="truewatcher.tower.TrackListener" primary="true" start="14" end="14" startBytecode="17" endBytecode="17" sourcefile="TrackListener.java" sourcepath="truewatcher/tower/TrackListener.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE" instanceHash="d6c166b9c4fe8e7422c734d8f480f9e2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Unread public/protected field: -[0]-.]--[truewatcher.tower.TrackStorage.latestStoredTrackpoint]-]-</LongMessage>
+    <Class classname="truewatcher.tower.TrackStorage" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackStorage" start="12" end="359" sourcefile="TrackStorage.java" sourcepath="truewatcher/tower/TrackStorage.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.TrackStorage]-]-</Message>
+    </Class>
+    <Field classname="truewatcher.tower.TrackStorage" name="latestStoredTrackpoint" signature="Ltruewatcher/tower/Trackpoint;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackStorage" sourcefile="TrackStorage.java" sourcepath="truewatcher/tower/TrackStorage.java">
+        <Message>-[CovLStr-[v1]--[In this file]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[Field -[0]-]--[truewatcher.tower.TrackStorage.latestStoredTrackpoint]-]-</Message>
+    </Field>
+    <SourceLine classname="truewatcher.tower.TrackStorage" primary="true" start="17" end="17" startBytecode="22" endBytecode="22" sourcefile="TrackStorage.java" sourcepath="truewatcher/tower/TrackStorage.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="feba26a89e2ed463bc1004cf095b560" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[-[0]- concatenates strings using + in a loop.]--[truewatcher.tower.TrackStorage$Counter.presentResult()]-]-</LongMessage>
+    <Class classname="truewatcher.tower.TrackStorage$Counter" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackStorage$Counter" start="101" end="139" sourcefile="TrackStorage.java" sourcepath="truewatcher/tower/TrackStorage.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.TrackStorage$Counter]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.TrackStorage$Counter" name="presentResult" signature="()Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackStorage$Counter" start="132" end="139" startBytecode="0" endBytecode="183" sourcefile="TrackStorage.java" sourcepath="truewatcher/tower/TrackStorage.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.TrackStorage$Counter.presentResult()]-]-</Message>
+    </Method>
+    <SourceLine classname="truewatcher.tower.TrackStorage$Counter" primary="true" start="136" end="136" startBytecode="31" endBytecode="31" sourcefile="TrackStorage.java" sourcepath="truewatcher/tower/TrackStorage.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="4f5496e58af7227b9c2915f44acd7975" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[-[0]- concatenates strings using + in a loop.]--[truewatcher.tower.TrackStorage$Mileage.presentResult()]-]-</LongMessage>
+    <Class classname="truewatcher.tower.TrackStorage$Mileage" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackStorage$Mileage" start="143" end="197" sourcefile="TrackStorage.java" sourcepath="truewatcher/tower/TrackStorage.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.TrackStorage$Mileage]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.TrackStorage$Mileage" name="presentResult" signature="()Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.TrackStorage$Mileage" start="190" end="197" startBytecode="0" endBytecode="186" sourcefile="TrackStorage.java" sourcepath="truewatcher/tower/TrackStorage.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.TrackStorage$Mileage.presentResult()]-]-</Message>
+    </Method>
+    <SourceLine classname="truewatcher.tower.TrackStorage$Mileage" primary="true" start="194" end="194" startBytecode="31" endBytecode="31" sourcefile="TrackStorage.java" sourcepath="truewatcher/tower/TrackStorage.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="4e7e031f2e1b0cc0a5ff612a12fd6eba" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Dead store to -[0]-.]--[objectClass]-]-</LongMessage>
+    <Class classname="truewatcher.tower.U" primary="true">
+      <SourceLine classname="truewatcher.tower.U" start="36" end="471" sourcefile="U.java" sourcepath="truewatcher/tower/U.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.U]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.U" name="classExists" signature="(Ljava/lang/String;)Z" isStatic="true" primary="true">
+      <SourceLine classname="truewatcher.tower.U" start="368" end="372" startBytecode="0" endBytecode="8" sourcefile="U.java" sourcepath="truewatcher/tower/U.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.U.classExists(String)]-]-</Message>
+    </Method>
+    <LocalVariable name="objectClass" register="1" pc="5" role="LOCAL_VARIABLE_NAMED">
+      <Message>-[CovLStr-[v1]--[Local variable named -[0]-]--[objectClass]-]-</Message>
+    </LocalVariable>
+    <SourceLine classname="truewatcher.tower.U" primary="true" start="368" end="368" startBytecode="4" endBytecode="4" sourcefile="U.java" sourcepath="truewatcher/tower/U.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="objectClass"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="bb4f1ebac602b4352a20023c8fedc00c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Found reliance on default encoding: -[0]-.]--[new String(byte[])]-]-</LongMessage>
+    <Class classname="truewatcher.tower.U" primary="true">
+      <SourceLine classname="truewatcher.tower.U" start="36" end="471" sourcefile="U.java" sourcepath="truewatcher/tower/U.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.U]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.U" name="fileGetContents" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="truewatcher.tower.U" start="290" end="299" startBytecode="0" endBytecode="245" sourcefile="U.java" sourcepath="truewatcher/tower/U.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.U.fileGetContents(String, String)]-]-</Message>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="438" end="438" startBytecode="0" endBytecode="65" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>-[CovLStr-[v1]--[Called method -[0]-]--[new String(byte[])]-]-</Message>
+    </Method>
+    <SourceLine classname="truewatcher.tower.U" primary="true" start="299" end="299" startBytecode="63" endBytecode="63" sourcefile="U.java" sourcepath="truewatcher/tower/U.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="41c2c9f7b05085cc796778021773893d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Found reliance on default encoding: -[0]-.]--[String.getBytes()]-]-</LongMessage>
+    <Class classname="truewatcher.tower.U" primary="true">
+      <SourceLine classname="truewatcher.tower.U" start="36" end="471" sourcefile="U.java" sourcepath="truewatcher/tower/U.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.U]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.U" name="filePutContents" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V" isStatic="true" primary="true">
+      <SourceLine classname="truewatcher.tower.U" start="316" end="323" startBytecode="0" endBytecode="221" sourcefile="U.java" sourcepath="truewatcher/tower/U.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.U.filePutContents(String, String, String, boolean)]-]-</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="747" end="747" startBytecode="0" endBytecode="51" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>-[CovLStr-[v1]--[Called method -[0]-]--[String.getBytes()]-]-</Message>
+    </Method>
+    <SourceLine classname="truewatcher.tower.U" primary="true" start="319" end="319" startBytecode="26" endBytecode="26" sourcefile="U.java" sourcepath="truewatcher/tower/U.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="918d39a768292c358c15905fdcb712ca" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Found reliance on default encoding: -[0]-.]--[new String(byte[])]-]-</LongMessage>
+    <Class classname="truewatcher.tower.U" primary="true">
+      <SourceLine classname="truewatcher.tower.U" start="36" end="471" sourcefile="U.java" sourcepath="truewatcher/tower/U.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.U]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.U" name="readAsset" signature="(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="truewatcher.tower.U" start="304" end="311" startBytecode="0" endBytecode="169" sourcefile="U.java" sourcepath="truewatcher/tower/U.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.U.readAsset(Context, String)]-]-</Message>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="438" end="438" startBytecode="0" endBytecode="65" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>-[CovLStr-[v1]--[Called method -[0]-]--[new String(byte[])]-]-</Message>
+    </Method>
+    <SourceLine classname="truewatcher.tower.U" primary="true" start="310" end="310" startBytecode="44" endBytecode="44" sourcefile="U.java" sourcepath="truewatcher/tower/U.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE" instanceHash="4a76d79177aabb4043c9d489ab69ad92" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="253">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Exceptional return value of -[0]- ignored.]--[java.io.File.delete()]-]-</LongMessage>
+    <Class classname="truewatcher.tower.U" primary="true">
+      <SourceLine classname="truewatcher.tower.U" start="36" end="471" sourcefile="U.java" sourcepath="truewatcher/tower/U.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.U]-]-</Message>
+    </Class>
+    <Method classname="truewatcher.tower.U" name="unlink" signature="(Ljava/lang/String;Ljava/lang/String;)Ltruewatcher/tower/U$Summary;" isStatic="true" primary="true">
+      <SourceLine classname="truewatcher.tower.U" start="249" end="255" startBytecode="0" endBytecode="189" sourcefile="U.java" sourcepath="truewatcher/tower/U.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[truewatcher.tower.U.unlink(String, String)]-]-</Message>
+    </Method>
+    <Method classname="java.io.File" name="delete" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="704" end="704" startBytecode="0" endBytecode="51" sourcefile="File.java" sourcepath="java/io/File.java"/>
+      <Message>-[CovLStr-[v1]--[Called method -[0]-]--[java.io.File.delete()]-]-</Message>
+    </Method>
+    <SourceLine classname="truewatcher.tower.U" primary="true" start="250" end="250" startBytecode="11" endBytecode="11" sourcefile="U.java" sourcepath="truewatcher/tower/U.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE" instanceHash="5e5fef48c05b04ab0b2e5c5783bb31b3" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Unread public/protected field: -[0]-.]--[truewatcher.tower.U$Summary2.away]-]-</LongMessage>
+    <Class classname="truewatcher.tower.U$Summary2" primary="true">
+      <SourceLine classname="truewatcher.tower.U$Summary2" start="235" end="242" sourcefile="U.java" sourcepath="truewatcher/tower/U.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[truewatcher.tower.U$Summary2]-]-</Message>
+    </Class>
+    <Field classname="truewatcher.tower.U$Summary2" name="away" signature="J" isStatic="false" primary="true">
+      <SourceLine classname="truewatcher.tower.U$Summary2" sourcefile="U.java" sourcepath="truewatcher/tower/U.java">
+        <Message>-[CovLStr-[v1]--[In this file]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[Field -[0]-]--[truewatcher.tower.U$Summary2.away]-]-</Message>
+    </Field>
+    <SourceLine classname="truewatcher.tower.U$Summary2" primary="true" start="236" end="236" startBytecode="19" endBytecode="19" sourcefile="U.java" sourcepath="truewatcher/tower/U.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription></ShortDescription>
+    <Details><![CDATA[]]></Details>
+  </BugPattern>
+  <BugPattern type="VA_FORMAT_STRING_USES_NEWLINE" abbrev="FS" category="BAD_PRACTICE">
+    <ShortDescription></ShortDescription>
+    <Details><![CDATA[]]></Details>
+  </BugPattern>
+  <BugPattern type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" abbrev="UrF" category="STYLE">
+    <ShortDescription></ShortDescription>
+    <Details><![CDATA[]]></Details>
+  </BugPattern>
+  <BugPattern type="WMI_WRONG_MAP_ITERATOR" abbrev="WMI" category="PERFORMANCE">
+    <ShortDescription></ShortDescription>
+    <Details><![CDATA[]]></Details>
+  </BugPattern>
+  <BugPattern type="SIC_INNER_SHOULD_BE_STATIC" abbrev="SIC" category="PERFORMANCE">
+    <ShortDescription></ShortDescription>
+    <Details><![CDATA[]]></Details>
+  </BugPattern>
+  <BugPattern type="UUF_UNUSED_FIELD" abbrev="UuF" category="PERFORMANCE">
+    <ShortDescription></ShortDescription>
+    <Details><![CDATA[]]></Details>
+  </BugPattern>
+  <BugPattern type="SBSC_USE_STRINGBUFFER_CONCATENATION" abbrev="SBSC" category="PERFORMANCE">
+    <ShortDescription></ShortDescription>
+    <Details><![CDATA[]]></Details>
+  </BugPattern>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription></ShortDescription>
+    <Details><![CDATA[]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription></ShortDescription>
+    <Details><![CDATA[]]></Details>
+  </BugPattern>
+  <BugPattern type="BC_UNCONFIRMED_CAST" abbrev="BC" category="STYLE">
+    <ShortDescription></ShortDescription>
+    <Details><![CDATA[]]></Details>
+  </BugPattern>
+  <BugPattern type="DMI_INVOKING_TOSTRING_ON_ARRAY" abbrev="USELESS_STRING" category="CORRECTNESS">
+    <ShortDescription></ShortDescription>
+    <Details><![CDATA[]]></Details>
+  </BugPattern>
+  <BugPattern type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" abbrev="RV" category="BAD_PRACTICE" cweid="253">
+    <ShortDescription></ShortDescription>
+    <Details><![CDATA[]]></Details>
+  </BugPattern>
+  <BugCode abbrev="BC">
+    <Description>Bad casts of object references</Description>
+  </BugCode>
+  <BugCode abbrev="WMI">
+    <Description>Inefficient Map Iterator</Description>
+  </BugCode>
+  <BugCode abbrev="RV" cweid="440">
+    <Description>Bad use of return value from method</Description>
+  </BugCode>
+  <BugCode abbrev="UuF">
+    <Description>Unused field</Description>
+  </BugCode>
+  <BugCode abbrev="UrF">
+    <Description>Unread field</Description>
+  </BugCode>
+  <BugCode abbrev="SBSC">
+    <Description>String concatenation in loop using + operator</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Dead local store</Description>
+  </BugCode>
+  <BugCode abbrev="USELESS_STRING">
+    <Description>Useless/non-informative string generated</Description>
+  </BugCode>
+  <BugCode abbrev="SIC">
+    <Description>Inner class could be made static</Description>
+  </BugCode>
+  <BugCode abbrev="FS">
+    <Description>Format string problem</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>java.rmi.Remote</MissingClass>
+    <MissingClass>java.util.Arrays$ArrayList</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Fri, 4 Sep 2020 14:56:28 +0900" total_classes="101" referenced_classes="553" total_bugs="31" total_size="5272" num_packages="1" java_version="1.8.0_242" vm_version="25.242-b20" cpu_seconds="20.31" clock_seconds="4.46" peak_mbytes="366.91" alloc_mbytes="981.50" gc_seconds="0.10" priority_2="26" priority_1="5">
+    <FileStats path="truewatcher/tower/AddPointActivity.java" bugCount="2" size="275" bugHash="1ffef894862babadaf6043336be166b3"/>
+    <FileStats path="truewatcher/tower/BuildConfig.java" bugCount="0" size="10"/>
+    <FileStats path="truewatcher/tower/CellInformer.java" bugCount="2" size="152" bugHash="6a174b97836439b0615fdc1276450931"/>
+    <FileStats path="truewatcher/tower/CellResolverFactory.java" bugCount="2" size="89" bugHash="fcea430c0b906c1bb295d114afad05e9"/>
+    <FileStats path="truewatcher/tower/ConfirmationDialogFragment.java" bugCount="1" size="47" bugHash="3abe7ad04f520b83bd2bb00ce7eabeeb"/>
+    <FileStats path="truewatcher/tower/DeeperRadioGroup.java" bugCount="1" size="39" bugHash="eb853aefd9b8294779b617d0c8df0e8c"/>
+    <FileStats path="truewatcher/tower/EditPointActivity.java" bugCount="0" size="301"/>
+    <FileStats path="truewatcher/tower/EditTextDialogFragment.java" bugCount="1" size="64" bugHash="48086e104f330b31c1a83bcf9032dd52"/>
+    <FileStats path="truewatcher/tower/FileActivity.java" bugCount="1" size="369" bugHash="152d37741a190f45f0327940dc9f1e08"/>
+    <FileStats path="truewatcher/tower/ForegroundService.java" bugCount="0" size="37"/>
+    <FileStats path="truewatcher/tower/GpsInformer.java" bugCount="0" size="71"/>
+    <FileStats path="truewatcher/tower/GpxHelper.java" bugCount="1" size="292" bugHash="ec6b8b72705c3ebcfadb8c45c8b604ab"/>
+    <FileStats path="truewatcher/tower/HttpGetRequest.java" bugCount="1" size="41" bugHash="646bb14a00d0657a5597f2a125eabb7e"/>
+    <FileStats path="truewatcher/tower/HttpPostRequest.java" bugCount="2" size="52" bugHash="67118e2e1bfc6688cc4b78a5e3b10eb9"/>
+    <FileStats path="truewatcher/tower/JSbridge.java" bugCount="0" size="103"/>
+    <FileStats path="truewatcher/tower/JsonHelper.java" bugCount="1" size="56" bugHash="6242926ed46de8952258b685dd3b78ed"/>
+    <FileStats path="truewatcher/tower/LatLon.java" bugCount="0" size="14"/>
+    <FileStats path="truewatcher/tower/ListActivity.java" bugCount="0" size="173"/>
+    <FileStats path="truewatcher/tower/ListHelper.java" bugCount="0" size="105"/>
+    <FileStats path="truewatcher/tower/MainActivity.java" bugCount="0" size="157"/>
+    <FileStats path="truewatcher/tower/MapViewer.java" bugCount="0" size="77"/>
+    <FileStats path="truewatcher/tower/Model.java" bugCount="0" size="40"/>
+    <FileStats path="truewatcher/tower/MyRegistry.java" bugCount="0" size="128"/>
+    <FileStats path="truewatcher/tower/PermissionAwareFragment.java" bugCount="0" size="17"/>
+    <FileStats path="truewatcher/tower/Point.java" bugCount="0" size="154"/>
+    <FileStats path="truewatcher/tower/PointFetcher.java" bugCount="0" size="77"/>
+    <FileStats path="truewatcher/tower/PointIndicator.java" bugCount="0" size="65"/>
+    <FileStats path="truewatcher/tower/PointList.java" bugCount="0" size="234"/>
+    <FileStats path="truewatcher/tower/PreferencesActivity.java" bugCount="0" size="165"/>
+    <FileStats path="truewatcher/tower/SingleFragmentActivity.java" bugCount="0" size="15"/>
+    <FileStats path="truewatcher/tower/StorageHelper.java" bugCount="0" size="117"/>
+    <FileStats path="truewatcher/tower/TestHelper.java" bugCount="0" size="88"/>
+    <FileStats path="truewatcher/tower/Tests1.java" bugCount="1" size="520" bugHash="f344bce3c78907a99c5018632250c9cc"/>
+    <FileStats path="truewatcher/tower/TrackActivity.java" bugCount="4" size="283" bugHash="9640ff7668a63d914037dc7a8a7bd0db"/>
+    <FileStats path="truewatcher/tower/TrackListener.java" bugCount="2" size="83" bugHash="8ff006668ae00ea5c5e170b809906d49"/>
+    <FileStats path="truewatcher/tower/TrackStorage.java" bugCount="3" size="364" bugHash="3f7e119c264dc2f5b5f8b150bb868081"/>
+    <FileStats path="truewatcher/tower/Trackpoint.java" bugCount="0" size="103"/>
+    <FileStats path="truewatcher/tower/U.java" bugCount="6" size="295" bugHash="41b8401977c940d25427d39bf73fcb0d"/>
+    <PackageStats package="truewatcher.tower" total_bugs="31" total_types="101" total_size="5272" priority_2="26" priority_1="5">
+      <ClassStats class="truewatcher.tower.AddPointActivity" sourceFile="AddPointActivity.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="truewatcher.tower.AddPointActivity$1" sourceFile="AddPointActivity.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="truewatcher.tower.AddPointActivity$AddPointFragment" sourceFile="AddPointActivity.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="truewatcher.tower.AddPointActivity$AddPointFragment$Adder" sourceFile="AddPointActivity.java" interface="false" size="71" bugs="1" priority_2="1"/>
+      <ClassStats class="truewatcher.tower.AddPointActivity$AddPointFragment$PointRenderer" sourceFile="AddPointActivity.java" interface="false" size="23" bugs="1" priority_2="1"/>
+      <ClassStats class="truewatcher.tower.AddPointActivity$AddPointFragment$Viewer" sourceFile="AddPointActivity.java" interface="false" size="92" bugs="0"/>
+      <ClassStats class="truewatcher.tower.AddPointActivity$AddPointFragment$Viewer$1" sourceFile="AddPointActivity.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="truewatcher.tower.AddPointActivity$AddPointFragment$Viewer$2" sourceFile="AddPointActivity.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="truewatcher.tower.BuildConfig" sourceFile="BuildConfig.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="truewatcher.tower.CellInformer" sourceFile="CellInformer.java" interface="false" size="152" bugs="2" priority_2="2"/>
+      <ClassStats class="truewatcher.tower.CellResolver" sourceFile="CellResolverFactory.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="truewatcher.tower.CellResolverFactory" sourceFile="CellResolverFactory.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="truewatcher.tower.CellResolverFactory$1" sourceFile="CellResolverFactory.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="truewatcher.tower.CellResolverFactory$MylnikovResolver" sourceFile="CellResolverFactory.java" interface="false" size="32" bugs="1" priority_2="1"/>
+      <ClassStats class="truewatcher.tower.CellResolverFactory$YandexResolver" sourceFile="CellResolverFactory.java" interface="false" size="43" bugs="1" priority_2="1"/>
+      <ClassStats class="truewatcher.tower.ConfirmationDialogFragment" sourceFile="ConfirmationDialogFragment.java" interface="false" size="30" bugs="1" priority_2="1"/>
+      <ClassStats class="truewatcher.tower.ConfirmationDialogFragment$1" sourceFile="ConfirmationDialogFragment.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="truewatcher.tower.ConfirmationDialogFragment$2" sourceFile="ConfirmationDialogFragment.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="truewatcher.tower.ConfirmationDialogFragment$ConfirmationDialogReceiver" sourceFile="ConfirmationDialogFragment.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="truewatcher.tower.DeeperRadioGroup" sourceFile="DeeperRadioGroup.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="truewatcher.tower.DeeperRadioGroup$1" sourceFile="DeeperRadioGroup.java" interface="false" size="11" bugs="1" priority_2="1"/>
+      <ClassStats class="truewatcher.tower.EditPointActivity" sourceFile="EditPointActivity.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="truewatcher.tower.EditPointActivity$1" sourceFile="EditPointActivity.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="truewatcher.tower.EditPointActivity$EditPointFragment" sourceFile="EditPointActivity.java" interface="false" size="122" bugs="0"/>
+      <ClassStats class="truewatcher.tower.EditPointActivity$EditPointFragment$Editor" sourceFile="EditPointActivity.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="truewatcher.tower.EditPointActivity$EditPointFragment$Viewer" sourceFile="EditPointActivity.java" interface="false" size="80" bugs="0"/>
+      <ClassStats class="truewatcher.tower.EditPointActivity$EditPointFragment$Viewer$1" sourceFile="EditPointActivity.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="truewatcher.tower.EditTextDialogFragment" sourceFile="EditTextDialogFragment.java" interface="false" size="46" bugs="1" priority_2="1"/>
+      <ClassStats class="truewatcher.tower.EditTextDialogFragment$1" sourceFile="EditTextDialogFragment.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="truewatcher.tower.EditTextDialogFragment$2" sourceFile="EditTextDialogFragment.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="truewatcher.tower.EditTextDialogFragment$EditTextDialogReceiver" sourceFile="EditTextDialogFragment.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="truewatcher.tower.FileActivity" sourceFile="FileActivity.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="truewatcher.tower.FileActivity$FileFragment" sourceFile="FileActivity.java" interface="false" size="173" bugs="0"/>
+      <ClassStats class="truewatcher.tower.FileActivity$FileFragment$Viewer" sourceFile="FileActivity.java" interface="false" size="167" bugs="1" priority_2="1"/>
+      <ClassStats class="truewatcher.tower.FileActivity$FileFragment$Viewer$1" sourceFile="FileActivity.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="truewatcher.tower.FileActivity$FileFragment$Viewer$2" sourceFile="FileActivity.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="truewatcher.tower.ForegroundService" sourceFile="ForegroundService.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="truewatcher.tower.ForegroundService$LocalBinder" sourceFile="ForegroundService.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="truewatcher.tower.GpsInformer" sourceFile="GpsInformer.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="truewatcher.tower.GpsInformer$1" sourceFile="GpsInformer.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="truewatcher.tower.GpxHelper" sourceFile="GpxHelper.java" interface="false" size="292" bugs="1" priority_2="1"/>
+      <ClassStats class="truewatcher.tower.HttpGetRequest" sourceFile="HttpGetRequest.java" interface="false" size="38" bugs="1" priority_1="1"/>
+      <ClassStats class="truewatcher.tower.HttpPostRequest" sourceFile="HttpPostRequest.java" interface="false" size="52" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="truewatcher.tower.HttpReceiver" sourceFile="HttpGetRequest.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="truewatcher.tower.JSbridge" sourceFile="JSbridge.java" interface="false" size="103" bugs="0"/>
+      <ClassStats class="truewatcher.tower.JsonHelper" sourceFile="JsonHelper.java" interface="false" size="56" bugs="1" priority_2="1"/>
+      <ClassStats class="truewatcher.tower.LatLon" sourceFile="LatLon.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="truewatcher.tower.ListActivity" sourceFile="ListActivity.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="truewatcher.tower.ListActivity$ListPointsFragment" sourceFile="ListActivity.java" interface="false" size="137" bugs="0"/>
+      <ClassStats class="truewatcher.tower.ListActivity$ListPointsFragment$1" sourceFile="ListActivity.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="truewatcher.tower.ListHelper" sourceFile="ListHelper.java" interface="false" size="84" bugs="0"/>
+      <ClassStats class="truewatcher.tower.ListHelper$MyArrayAdapter" sourceFile="ListHelper.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="truewatcher.tower.MainActivity" sourceFile="MainActivity.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="truewatcher.tower.MainActivity$MainPageFragment" sourceFile="MainActivity.java" interface="false" size="139" bugs="0"/>
+      <ClassStats class="truewatcher.tower.MapViewer" sourceFile="MapViewer.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="truewatcher.tower.MapViewer$1" sourceFile="MapViewer.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="truewatcher.tower.Model" sourceFile="Model.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="truewatcher.tower.MyRegistry" sourceFile="MyRegistry.java" interface="false" size="128" bugs="0"/>
+      <ClassStats class="truewatcher.tower.PermissionAwareFragment" sourceFile="PermissionAwareFragment.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="truewatcher.tower.PermissionReceiver" sourceFile="PermissionAwareFragment.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="truewatcher.tower.Point" sourceFile="Point.java" interface="false" size="154" bugs="0"/>
+      <ClassStats class="truewatcher.tower.PointFetcher" sourceFile="PointFetcher.java" interface="false" size="75" bugs="0"/>
+      <ClassStats class="truewatcher.tower.PointIndicator" sourceFile="PointIndicator.java" interface="false" size="65" bugs="0"/>
+      <ClassStats class="truewatcher.tower.PointList" sourceFile="PointList.java" interface="false" size="234" bugs="0"/>
+      <ClassStats class="truewatcher.tower.PointReceiver" sourceFile="PointFetcher.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="truewatcher.tower.PreferencesActivity" sourceFile="PreferencesActivity.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="truewatcher.tower.PreferencesActivity$PreferencesFragment" sourceFile="PreferencesActivity.java" interface="false" size="130" bugs="0"/>
+      <ClassStats class="truewatcher.tower.PreferencesActivity$PreferencesFragment$KeyCheck" sourceFile="PreferencesActivity.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="truewatcher.tower.SingleFragmentActivity" sourceFile="SingleFragmentActivity.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="truewatcher.tower.StorageHelper" sourceFile="StorageHelper.java" interface="false" size="117" bugs="0"/>
+      <ClassStats class="truewatcher.tower.TestHelper" sourceFile="TestHelper.java" interface="false" size="85" bugs="0"/>
+      <ClassStats class="truewatcher.tower.TestHelper$TestFailure" sourceFile="TestHelper.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="truewatcher.tower.Tests1" sourceFile="Tests1.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="truewatcher.tower.Tests1$Tests1Fragment" sourceFile="Tests1.java" interface="false" size="512" bugs="1" priority_2="1"/>
+      <ClassStats class="truewatcher.tower.TrackActivity" sourceFile="TrackActivity.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="truewatcher.tower.TrackActivity$1" sourceFile="TrackActivity.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="truewatcher.tower.TrackActivity$TrackPageFragment" sourceFile="TrackActivity.java" interface="false" size="177" bugs="0"/>
+      <ClassStats class="truewatcher.tower.TrackActivity$TrackPageFragment$DataWatcher" sourceFile="TrackActivity.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer" sourceFile="TrackActivity.java" interface="false" size="58" bugs="4" priority_2="4"/>
+      <ClassStats class="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer$1" sourceFile="TrackActivity.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer$2" sourceFile="TrackActivity.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="truewatcher.tower.TrackActivity$TrackPageFragment$Viewer$3" sourceFile="TrackActivity.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="truewatcher.tower.TrackListener" sourceFile="TrackListener.java" interface="false" size="81" bugs="2" priority_2="2"/>
+      <ClassStats class="truewatcher.tower.TrackListener$TrackPointListener" sourceFile="TrackListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="truewatcher.tower.TrackStorage" sourceFile="TrackStorage.java" interface="false" size="143" bugs="1" priority_2="1"/>
+      <ClassStats class="truewatcher.tower.TrackStorage$1" sourceFile="TrackStorage.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="truewatcher.tower.TrackStorage$Counter" sourceFile="TrackStorage.java" interface="false" size="31" bugs="1" priority_2="1"/>
+      <ClassStats class="truewatcher.tower.TrackStorage$Mileage" sourceFile="TrackStorage.java" interface="false" size="40" bugs="1" priority_2="1"/>
+      <ClassStats class="truewatcher.tower.TrackStorage$Track2LatLonJSON" sourceFile="TrackStorage.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="truewatcher.tower.TrackStorage$TrackToGpx" sourceFile="TrackStorage.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="truewatcher.tower.TrackStorage$Visitor" sourceFile="TrackStorage.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="truewatcher.tower.Trackpoint" sourceFile="Trackpoint.java" interface="false" size="103" bugs="0"/>
+      <ClassStats class="truewatcher.tower.U" sourceFile="U.java" interface="false" size="236" bugs="5" priority_2="2" priority_1="3"/>
+      <ClassStats class="truewatcher.tower.U$1" sourceFile="U.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="truewatcher.tower.U$2" sourceFile="U.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="truewatcher.tower.U$DataException" sourceFile="U.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="truewatcher.tower.U$FileException" sourceFile="U.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="truewatcher.tower.U$RunException" sourceFile="U.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="truewatcher.tower.U$Summary" sourceFile="U.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="truewatcher.tower.U$Summary2" sourceFile="U.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="truewatcher.tower.U$UserException" sourceFile="U.java" interface="false" size="4" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="232" invocations="1282" avgMicrosecondsPerInvocation="181" maxMicrosecondsPerInvocation="19903" standardDeviationMicrosecondsPerInvocation="722"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="205" invocations="553" avgMicrosecondsPerInvocation="372" maxMicrosecondsPerInvocation="11796" standardDeviationMicrosecondsPerInvocation="943"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="203" invocations="744" avgMicrosecondsPerInvocation="273" maxMicrosecondsPerInvocation="14908" standardDeviationMicrosecondsPerInvocation="691"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="174" invocations="773" avgMicrosecondsPerInvocation="225" maxMicrosecondsPerInvocation="12243" standardDeviationMicrosecondsPerInvocation="692"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="172" invocations="749" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="6631" standardDeviationMicrosecondsPerInvocation="419"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="156" invocations="782" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="13379" standardDeviationMicrosecondsPerInvocation="571"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="148" invocations="749" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="3980" standardDeviationMicrosecondsPerInvocation="374"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="134" invocations="749" avgMicrosecondsPerInvocation="179" maxMicrosecondsPerInvocation="15018" standardDeviationMicrosecondsPerInvocation="580"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="117" invocations="553" avgMicrosecondsPerInvocation="211" maxMicrosecondsPerInvocation="8368" standardDeviationMicrosecondsPerInvocation="754"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="108" invocations="765" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="69114" standardDeviationMicrosecondsPerInvocation="2499"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="102" invocations="553" avgMicrosecondsPerInvocation="185" maxMicrosecondsPerInvocation="64991" standardDeviationMicrosecondsPerInvocation="2762"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="97" invocations="620" avgMicrosecondsPerInvocation="157" maxMicrosecondsPerInvocation="3924" standardDeviationMicrosecondsPerInvocation="280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="73" invocations="997" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="3529" standardDeviationMicrosecondsPerInvocation="191"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="65" invocations="623" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="19069" standardDeviationMicrosecondsPerInvocation="801"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="64" invocations="553" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="5480" standardDeviationMicrosecondsPerInvocation="337"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="63" invocations="553" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="8002" standardDeviationMicrosecondsPerInvocation="386"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="44" invocations="1299" avgMicrosecondsPerInvocation="34" maxMicrosecondsPerInvocation="1246" standardDeviationMicrosecondsPerInvocation="56"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="43" invocations="553" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="3912" standardDeviationMicrosecondsPerInvocation="246"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="41" invocations="101" avgMicrosecondsPerInvocation="412" maxMicrosecondsPerInvocation="2717" standardDeviationMicrosecondsPerInvocation="533"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="40" invocations="749" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="2466" standardDeviationMicrosecondsPerInvocation="120"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="38" invocations="101" avgMicrosecondsPerInvocation="378" maxMicrosecondsPerInvocation="3013" standardDeviationMicrosecondsPerInvocation="550"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="37" invocations="553" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="11138" standardDeviationMicrosecondsPerInvocation="491"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="37" invocations="553" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="2392" standardDeviationMicrosecondsPerInvocation="185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="36" invocations="101" avgMicrosecondsPerInvocation="365" maxMicrosecondsPerInvocation="5828" standardDeviationMicrosecondsPerInvocation="686"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="34" invocations="101" avgMicrosecondsPerInvocation="337" maxMicrosecondsPerInvocation="1954" standardDeviationMicrosecondsPerInvocation="362"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="31" invocations="101" avgMicrosecondsPerInvocation="310" maxMicrosecondsPerInvocation="15814" standardDeviationMicrosecondsPerInvocation="1703"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="31" invocations="15619" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="3631" standardDeviationMicrosecondsPerInvocation="33"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="30" invocations="101" avgMicrosecondsPerInvocation="299" maxMicrosecondsPerInvocation="3369" standardDeviationMicrosecondsPerInvocation="555"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="29" invocations="553" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="1637" standardDeviationMicrosecondsPerInvocation="144"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="29" invocations="101" avgMicrosecondsPerInvocation="293" maxMicrosecondsPerInvocation="3529" standardDeviationMicrosecondsPerInvocation="557"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="29" invocations="1222" avgMicrosecondsPerInvocation="24" maxMicrosecondsPerInvocation="1582" standardDeviationMicrosecondsPerInvocation="68"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="28" invocations="101" avgMicrosecondsPerInvocation="284" maxMicrosecondsPerInvocation="12001" standardDeviationMicrosecondsPerInvocation="1193"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="28" invocations="101" avgMicrosecondsPerInvocation="281" maxMicrosecondsPerInvocation="3447" standardDeviationMicrosecondsPerInvocation="564"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="27" invocations="744" avgMicrosecondsPerInvocation="37" maxMicrosecondsPerInvocation="1432" standardDeviationMicrosecondsPerInvocation="74"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="26" invocations="695" avgMicrosecondsPerInvocation="37" maxMicrosecondsPerInvocation="989" standardDeviationMicrosecondsPerInvocation="67"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

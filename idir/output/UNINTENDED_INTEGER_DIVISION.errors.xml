@@ -1,0 +1,31 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>UNINTENDED_INTEGER_DIVISION</checker>
+<type>unintended_integer_division</type>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.getTimeOffsetHr()</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<main>true</main>
+<tag>integer_division</tag>
+<description>{CovLStrv2{{t{Dividing integer expressions {0} and {1}, and then converting the integer quotient to type {2}. Any remainder, or fractional part of the quotient, is ignored.}{{code{calendar.get(15) + calendar.get(16)}}}{{code{3600000}}}{{code{float}}}}}}</description>
+<line>388</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{{t{To compute and use a non-integer quotient, change or cast either operand to type {0}. If integer division is intended, consider indicating that by casting the result to type {1} .}{{code{float}}}{{code{int}}}}}}</description>
+<line>388</line>
+</event>
+<extra>3600000</extra>
+<subcategory>none</subcategory>
+<antecedentMerge>
+<domain>STATIC_JAVA</domain>
+<checker>FB.ICAST_IDIV_CAST_TO_DOUBLE</checker>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.getTimeOffsetHr()</function>
+<extra></extra>
+</antecedentMerge>
+</error>

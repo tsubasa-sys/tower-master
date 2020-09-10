@@ -1,0 +1,21 @@
+**** BEGIN PROBE run_test_sanity ****
+**** END PROBE run_test_sanity ****
+**** BEGIN PROBE get_version_switch_output ****
+Version switch: -version
+**** BEGIN FILE source file: C:/Users/tsubasa/AppData/Local/Temp/cov-tsubasa/eda30ba06ea5ed407aa09be4df93b8fd/cov-tsubasa/6e770ae1f938bb5262a510f3f8f44121/test.java
+int main() {} 
+
+**** END source file ***
+pipe_command: c:\program files\java\jdk-14.0.2\bin\javaw.exe -version 
+pipe_commands starting: c:\program files\java\jdk-14.0.2\bin\javaw.exe -version 
+**** BEGIN FILE output: C:/Users/tsubasa/AppData/Local/Temp/cov-tsubasa/eda30ba06ea5ed407aa09be4df93b8fd/cov-tsubasa/6e770ae1f938bb5262a510f3f8f44121/version_output
+
+**** END FILE output ***
+**** BEGIN FILE error: 
+java version "14.0.2" 2020-07-14
+Java(TM) SE Runtime Environment (build 14.0.2+12-46)
+Java HotSpot(TM) 64-Bit Server VM (build 14.0.2+12-46, mixed mode, sharing)
+
+**** END FILE error ***
+**** END PROBE get_version_switch_output ****
+Compiler version found: 14

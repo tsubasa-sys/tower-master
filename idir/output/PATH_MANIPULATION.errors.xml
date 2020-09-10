@@ -1,0 +1,200 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>PATH_MANIPULATION</checker>
+<type>path_manipulation</type>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.fileExists(java.lang.String, java.lang.String, java.lang.String)</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>tainted_source</tag>
+<description>{CovLStrv2{{t{Reading data from mobile user input, which is considered tainted.}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>403</line>
+</event>
+<event>
+<tag>taint_path_call</tag>
+<description>{CovLStrv2{{t{Passing the tainted data through {0}.}{{code{java.lang.CharSequence.toString()}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>403</line>
+</event>
+<event>
+<tag>taint_path_return</tag>
+<description>{CovLStrv2{{t{Returning the tainted data.}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>403</line>
+</event>
+<event>
+<tag>taint_path_call</tag>
+<description>{CovLStrv2{{t{{0} returns the tainted data.}{{code{truewatcher.tower.FileActivity$FileFragment$Viewer.getExportFile()}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>147</line>
+</event>
+<event>
+<tag>taint_path_arg</tag>
+<description>{CovLStrv2{{t{Passing the tainted data, {0}, to {1}.}{{code{targetFile}}}{{code{truewatcher.tower.FileActivity$FileFragment.assureNotExists(java.lang.String, java.lang.String)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>148</line>
+</event>
+<event>
+<tag>taint_path_param</tag>
+<description>{CovLStrv2{{t{Parameter {0} receives the tainted data.}{{code{f}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>245</line>
+</event>
+<event>
+<tag>taint_path_arg</tag>
+<description>{CovLStrv2{{t{Passing the tainted data, {0}, to {1}.}{{code{f}}}{{code{truewatcher.tower.U.assureExtension(java.lang.String, java.lang.String)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>247</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.assureExtension(java.lang.String, java.lang.String)</function>
+<key>8d68fce6205157b0dba2d4d8ff93d854</key>
+<id>0</id>
+</model_ptr>
+</event>
+<event>
+<tag>taint_path_call</tag>
+<description>{CovLStrv2{{t{{0} returns the tainted data.}{{code{truewatcher.tower.U.assureExtension(java.lang.String, java.lang.String)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>247</line>
+</event>
+<event>
+<tag>taint_path_arg</tag>
+<description>{CovLStrv2{{t{Passing the tainted data, {0}, to {1}.}{{code{ff}}}{{code{truewatcher.tower.U.fileExists(java.lang.String, java.lang.String, java.lang.String)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>248</line>
+</event>
+<event>
+<tag>taint_path_param</tag>
+<description>{CovLStrv2{{t{Parameter {0} receives the tainted data.}{{code{name}}}}}}</description>
+<line>259</line>
+</event>
+<event>
+<tag>taint_path_arg</tag>
+<description>{CovLStrv2{{t{Passing the tainted data, {0}, to {1}.}{{code{name}}}{{code{truewatcher.tower.U.assureExtension(java.lang.String, java.lang.String)}}}}}}</description>
+<line>260</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.assureExtension(java.lang.String, java.lang.String)</function>
+<key>8d68fce6205157b0dba2d4d8ff93d854</key>
+<id>0</id>
+</model_ptr>
+</event>
+<event>
+<tag>taint_path_call</tag>
+<description>{CovLStrv2{{t{{0} returns the tainted data.}{{code{truewatcher.tower.U.assureExtension(java.lang.String, java.lang.String)}}}}}}</description>
+<line>260</line>
+</event>
+<event>
+<main>true</main>
+<tag>sink</tag>
+<description>{CovLStrv2{{t{Constructing a path or URI using the tainted value {0}. This may allow an attacker to access, modify, or test the existence of critical or sensitive files.}{{code{ne}}}}}}</description>
+<line>262</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{{t{Path manipulation vulnerabilities can be addressed by proper input validation. Blacklisting characters that allow unsafe path traversal can improve the safety of the input, but the recommended approach is to whitelist the set of expected characters. This should exclude absolute paths and upward directory traversal.}}}}</description>
+<line>262</line>
+</event>
+<extra>ne</extra>
+<subcategory>none</subcategory>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>PATH_MANIPULATION</checker>
+<type>path_manipulation</type>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.filePutContents(java.lang.String, java.lang.String, java.lang.String, boolean)</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>tainted_source</tag>
+<description>{CovLStrv2{{t{Reading data from mobile user input, which is considered tainted.}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>403</line>
+</event>
+<event>
+<tag>taint_path_call</tag>
+<description>{CovLStrv2{{t{Passing the tainted data through {0}.}{{code{java.lang.CharSequence.toString()}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>403</line>
+</event>
+<event>
+<tag>taint_path_return</tag>
+<description>{CovLStrv2{{t{Returning the tainted data.}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>403</line>
+</event>
+<event>
+<tag>taint_path_call</tag>
+<description>{CovLStrv2{{t{{0} returns the tainted data.}{{code{truewatcher.tower.FileActivity$FileFragment$Viewer.getExportFile()}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>191</line>
+</event>
+<event>
+<tag>taint_path_arg</tag>
+<description>{CovLStrv2{{t{Passing the tainted data, {0}, to {1}.}{{code{targetFile}}}{{code{truewatcher.tower.U.assureExtension(java.lang.String, java.lang.String)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>193</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.assureExtension(java.lang.String, java.lang.String)</function>
+<key>8d68fce6205157b0dba2d4d8ff93d854</key>
+<id>0</id>
+</model_ptr>
+</event>
+<event>
+<tag>taint_path_call</tag>
+<description>{CovLStrv2{{t{{0} returns the tainted data.}{{code{truewatcher.tower.U.assureExtension(java.lang.String, java.lang.String)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>193</line>
+</event>
+<event>
+<tag>taint_path_arg</tag>
+<description>{CovLStrv2{{t{Passing the tainted data, {0}, to {1}.}{{code{targetFile}}}{{code{truewatcher.tower.StorageHelper.writePoints(truewatcher.tower.PointList, java.lang.String, int, int, java.lang.String)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>197</line>
+</event>
+<event>
+<tag>taint_path_param</tag>
+<description>{CovLStrv2{{t{Parameter {0} receives the tainted data.}{{code{targetFile}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/StorageHelper.java</file>
+<line>35</line>
+</event>
+<event>
+<tag>taint_path_arg</tag>
+<description>{CovLStrv2{{t{Passing the tainted data, {0}, to {1}.}{{code{targetFile}}}{{code{truewatcher.tower.U.filePutContents(java.lang.String, java.lang.String, java.lang.String, boolean)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/StorageHelper.java</file>
+<line>59</line>
+</event>
+<event>
+<tag>taint_path_param</tag>
+<description>{CovLStrv2{{t{Parameter {0} receives the tainted data.}{{code{fileNameExt}}}}}}</description>
+<line>315</line>
+</event>
+<event>
+<main>true</main>
+<tag>sink</tag>
+<description>{CovLStrv2{{t{Constructing a path or URI using the tainted value {0}. This may allow an attacker to access, modify, or test the existence of critical or sensitive files.}{{code{fileNameExt}}}}}}</description>
+<line>316</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{{t{Path manipulation vulnerabilities can be addressed by proper input validation. Blacklisting characters that allow unsafe path traversal can improve the safety of the input, but the recommended approach is to whitelist the set of expected characters. This should exclude absolute paths and upward directory traversal.}}}}</description>
+<line>316</line>
+</event>
+<extra>fileNameExt</extra>
+<subcategory>none</subcategory>
+</error>

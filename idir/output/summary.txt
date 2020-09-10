@@ -1,0 +1,37 @@
+"C:\Program Files\Coverity\Coverity Static Analysis\bin\cov-analyze.exe" --dir .\idir\ --all --android-security 
+WARNING: 1/39 source files omitted for SpotBugs analysis because of name collisions (2.5%), see C:\Users\tsubasa\Downloads\tower-master\idir\output\analysis-log.txt for details
+
+
+SpotBugs time: 00:00:10
+Analysis summary report:
+------------------------
+Files analyzed                 : 39 Total
+    Java                       : 39
+Total LoC input to cov-analyze : 6130
+Functions analyzed             : 2437
+Paths analyzed                 : 84433
+Time taken by analysis         : 00:00:41
+Defect occurrences found       : 22 Total
+                                  2 CHECKED_RETURN
+                                  1 FORWARD_NULL
+                                  9 NULL_RETURNS
+                                  1 OVERFLOW_BEFORE_WIDEN
+                                  2 PATH_MANIPULATION
+                                  1 RESOURCE_LEAK
+                                  4 SENSITIVE_DATA_LEAK
+                                  1 UNINTENDED_INTEGER_DIVISION
+                                  1 UNRESTRICTED_ACCESS_TO_FILE
+SpotBugs Checkers: 31 errors
+                  FB.BC_UNCONFIRMED_CAST           1
+                 FB.DLS_DEAD_LOCAL_STORE           6
+       FB.DMI_INVOKING_TOSTRING_ON_ARRAY           1
+                  FB.DM_DEFAULT_ENCODING           5
+ FB.RV_RETURN_VALUE_IGNORED_BAD_PRACTICE           1
+  FB.SBSC_USE_STRINGBUFFER_CONCATENATION           4
+           FB.SIC_INNER_SHOULD_BE_STATIC           2
+                     FB.URF_UNREAD_FIELD           3
+ FB.URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD           4
+                     FB.UUF_UNUSED_FIELD           2
+        FB.VA_FORMAT_STRING_USES_NEWLINE           1
+               FB.WMI_WRONG_MAP_ITERATOR           1
+Additional defects, SpotBugs   : 31

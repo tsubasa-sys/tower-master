@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+  <Preference
+      app:key="pAlert"
+      android:selectable="false"
+      android:title=""
+      android:summary="" />
+
+  <ListPreference
+      app:key="mapProvider"
+      app:title="@string/chooseMapProvider"
+      app:entries="@array/mapProviderArray"
+      app:entryValues="@array/mapProviderValues" />
+
+  <ListPreference
+      app:key="cellResolver"
+      app:title="@string/chooseCellResolver"
+      app:entries="@array/cellResolverArray"
+      app:entryValues="@array/cellResolverValues" />
+
+  <EditTextPreference
+      app:key="mapZoom"
+      app:title="@string/chooseMapZoom" />
+      <!-- android:inputType="number"
+      does not work in support.v7.preferences -->
+
+
+  <EditTextPreference
+      app:key="maxPoints"
+      app:title="@string/chooseMaxPoints" />
+
+  <SwitchPreferenceCompat
+      app:key="useTrash"
+      app:title="@string/useTrash" />
+
+  <SwitchPreferenceCompat
+      app:key="enableTrack"
+      app:title="@string/enableTrack" />
+
+  <SwitchPreferenceCompat
+      app:key="shouldCenterMapOnTrack"
+      app:title="@string/shouldCenterMapOnTrack" />
+
+  <EditTextPreference
+      app:key="gpsMinDistance"
+      app:title="@string/gpsMinDistance" />
+
+  <EditTextPreference
+      app:key="gpsMinDelayS"
+      app:title="@string/gpsMinDelayS" />
+
+  <EditTextPreference
+      app:key="yandexMapKey"
+      app:title="@string/yandexMapKey" />
+
+  <EditTextPreference
+      app:key="yandexLocatorKey"
+      app:title="@string/yandexLocatorKey" />
+
+</android.support.v7.preference.PreferenceScreen>

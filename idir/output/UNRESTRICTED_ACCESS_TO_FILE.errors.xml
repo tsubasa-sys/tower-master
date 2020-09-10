@@ -1,0 +1,76 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>UNRESTRICTED_ACCESS_TO_FILE</checker>
+<type>android_unrestricted_access_to_file</type>
+<subtype>unrestricted_file_access</subtype>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.filePutContents(java.lang.String, java.lang.String, java.lang.String, boolean)</function>
+<ordered>true</ordered>
+<event>
+<tag>external_storage_path</tag>
+<description>{CovLStrv2{{t{Obtaining the path to external storage.}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Tests1.java</file>
+<line>60</line>
+</event>
+<event>
+<tag>call</tag>
+<description>{CovLStrv2{{t{Passing the external storage path through {0}.}{{code{android.content.ContextWrapper.getExternalFilesDir(java.lang.String)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Tests1.java</file>
+<line>60</line>
+</event>
+<event>
+<tag>call</tag>
+<description>{CovLStrv2{{t{Passing the external storage path through {0}.}{{code{java.io.File.getPath()}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Tests1.java</file>
+<line>60</line>
+</event>
+<event>
+<tag>field_write</tag>
+<description>{CovLStrv2{{t{Writing the external storage path to the field {0}.}{{code{mPath}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Tests1.java</file>
+<line>60</line>
+</event>
+<event>
+<tag>call</tag>
+<description>{CovLStrv2{{t{Making call to {0}.}{{code{truewatcher.tower.Tests1$Tests1Fragment.testCsvImport()}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Tests1.java</file>
+<line>63</line>
+</event>
+<event>
+<tag>field_read</tag>
+<description>{CovLStrv2{{t{Reading the external storage path from the field {0}.}{{code{mPath}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Tests1.java</file>
+<line>208</line>
+</event>
+<event>
+<tag>argument</tag>
+<description>{CovLStrv2{{t{Passing the external storage path, {0}, to {1}.}{{code{mPath}}}{{code{truewatcher.tower.U.filePutContents(java.lang.String, java.lang.String, java.lang.String, boolean)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Tests1.java</file>
+<line>208</line>
+</event>
+<event>
+<tag>parm_in</tag>
+<description>{CovLStrv2{{t{Parameter {0} receives the external storage path.}{{code{path}}}}}}</description>
+<line>315</line>
+</event>
+<event>
+<tag>call</tag>
+<description>{CovLStrv2{{t{Passing the external storage path through {0}.}{{code{java.io.File.File(java.lang.String, java.lang.String)}}}}}}</description>
+<line>316</line>
+</event>
+<event>
+<main>true</main>
+<tag>create_insecure_file</tag>
+<description>{CovLStrv2{{t{The file is stored on external storage. Other applications will always have read-write access even if the mode is set to {code{MODE_PRIVATE}}.}}}}</description>
+<line>317</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{{t{Unless the file should be accessed by other applications, consider creating it on storage with access restrictions, such as the directory pointed to by {code{Context.getFilesDir}}.}}}}</description>
+<line>317</line>
+</event>
+<extra>unrestricted_file_access:java.io.FileOutputStream.&lt;init&gt;(java.io.File, boolean)void</extra>
+<subcategory>unrestricted_file_access</subcategory>
+</error>

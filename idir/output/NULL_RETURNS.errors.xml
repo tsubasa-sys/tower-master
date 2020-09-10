@@ -1,0 +1,576 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Tests1.java</file>
+<function>truewatcher.tower.Tests1$Tests1Fragment.testCsvImport()</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns {code{null}} (checked {1} out of {2} times).}{{code{getCatalog}}}{1}{3}}}}</description>
+<line>216</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.getCatalog(java.lang.String, java.lang.String)</function>
+<key>0238682da5896df0e91b6e1e10099482</key>
+<id>2</id>
+</model_ptr>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{1}}{t{Assigning: {0} = return value from {1}.}{{code{catalog}}}{{code{truewatcher.tower.U.getCatalog(mStorageHelper.getMyDir(), mode)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>80</line>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{1}}{t{{0} has its value checked in {1}.}{{code{catalog}}}{{code{catalog == null}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>81</line>
+</event>
+<event>
+<tag>var_assigned</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = {code{null}} return value from {1}.}{{code{dir}}}{{code{getCatalog}}}}}}</description>
+<line>216</line>
+</event>
+<event>
+<main>true</main>
+<tag>dereference</tag>
+<description>{CovLStrv2{{t{Dereferencing a pointer that might be {code{null}} {0} when calling {1}.}{{code{dir}}}{{code{arrayContains}}}}}}</description>
+<line>217</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.arrayContains(java.lang.String[], java.lang.String)</function>
+<key>42737a6a75e7c94862bb3603a1763e9f</key>
+<id>3</id>
+</model_ptr>
+</event>
+<extra>getCatalog</extra>
+<subcategory>none</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Call to null-returning function</eventSetCaption>
+<eventSetCaption>Examples where return value was checked for null</eventSetCaption>
+</eventSetCaptions>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/CellInformer.java</file>
+<function>truewatcher.tower.CellInformer.startResolveCell()</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>try_fallthrough</tag>
+<description>{CovLStrv2{{t{Falling through to end of try statement.}}}}</description>
+<line>67</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>try_end</tag>
+<description>{CovLStrv2{{t{End of try statement.}}}}</description>
+<line>73</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns {code{null}} (checked {1} out of {2} times).}{{code{getResolver}}}{0}{1}}}}</description>
+<line>75</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/CellResolverFactory.java</file>
+<function>truewatcher.tower.CellResolverFactory.getResolver(java.lang.String)</function>
+<key>12728b90c8abdc289948a005ab669f73</key>
+<id>1</id>
+</model_ptr>
+</event>
+<event>
+<tag>var_assigned</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = {code{null}} return value from {1}.}{{code{mCellResolver}}}{{code{getResolver}}}}}}</description>
+<line>75</line>
+</event>
+<event>
+<main>true</main>
+<tag>null_method_call</tag>
+<description>{CovLStrv2{{t{Calling a method on null object {0}.}{{code{mCellResolver}}}}}}</description>
+<line>76</line>
+</event>
+<extra>getResolver</extra>
+<subcategory>none</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Call to null-returning function</eventSetCaption>
+<eventSetCaption>Examples where return value was checked for null</eventSetCaption>
+</eventSetCaptions>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/CellInformer.java</file>
+<function>truewatcher.tower.CellInformer.getInfo()</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{truewatcher.tower.U.DEBUG}}}}}}</description>
+<line>124</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns {code{null}} (checked {1} out of {2} times).}{{code{getAllCellInfo}}}{0}{1}}}}</description>
+<line>129</line>
+</event>
+<event>
+<tag>var_assigned</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = {code{null}} return value from {1}.}{{code{cellInfos}}}{{code{getAllCellInfo}}}}}}</description>
+<line>129</line>
+</event>
+<event>
+<tag>try_fallthrough</tag>
+<description>{CovLStrv2{{t{Falling through to end of try statement.}}}}</description>
+<line>130</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>try_end</tag>
+<description>{CovLStrv2{{t{End of try statement.}}}}</description>
+<line>131</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{truewatcher.tower.U.DEBUG}}}}}}</description>
+<line>132</line>
+<path_event></path_event>
+</event>
+<event>
+<main>true</main>
+<tag>null_method_call</tag>
+<description>{CovLStrv2{{t{Calling a method on null object {0}.}{{code{cellInfos}}}}}}</description>
+<line>132</line>
+</event>
+<extra>getAllCellInfo</extra>
+<subcategory>none</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Call to null-returning function</eventSetCaption>
+<eventSetCaption>Examples where return value was checked for null</eventSetCaption>
+</eventSetCaptions>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Tests1.java</file>
+<function>truewatcher.tower.Tests1$Tests1Fragment.testTrackUtils()</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>throw</tag>
+<description>{CovLStrv2{{t{Throwing {0} from call to {1}.}{{code{truewatcher.tower.U.DataException}}}{{code{track2latLonJson}}}}}}</description>
+<line>348</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/GpxHelper.java</file>
+<function>truewatcher.tower.GpxHelper.track2latLonJson(java.lang.String)</function>
+<key>6f0bf0a7de0edc60de980acfde9eb7c4</key>
+<id>11</id>
+</model_ptr>
+<path_event>
+<jump>true</jump>
+<exception>true</exception>
+</path_event>
+</event>
+<event>
+<tag>catch</tag>
+<description>{CovLStrv2{{t{Catching exception.}}}}</description>
+<line>364</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>throw</tag>
+<description>{CovLStrv2{{t{Throwing {0} from call to {1}.}{{code{truewatcher.tower.U.DataException}}}{{code{csv2LatLonJSON}}}}}}</description>
+<line>383</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/TrackStorage.java</file>
+<function>truewatcher.tower.TrackStorage$Track2LatLonJSON.csv2LatLonJSON(java.lang.String)</function>
+<key>4db3d1beaa864ef937780be96ae75669</key>
+<id>0</id>
+</model_ptr>
+<path_event>
+<jump>true</jump>
+<exception>true</exception>
+</path_event>
+</event>
+<event>
+<tag>catch</tag>
+<description>{CovLStrv2{{t{Catching exception.}}}}</description>
+<line>392</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns {code{null}} (checked {1} out of {2} times).}{{code{deleteLastSegmentString}}}{1}{2}}}}</description>
+<line>399</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/TrackStorage.java</file>
+<function>truewatcher.tower.TrackStorage.deleteLastSegmentString(java.lang.String)</function>
+<key>64ca28690f5ec6b778c6868953c2f1fe</key>
+<id>5</id>
+</model_ptr>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{1}}{t{Assigning: {0} = return value from {1}.}{{code{buf}}}{{code{deleteLastSegmentString(buf)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/TrackStorage.java</file>
+<line>246</line>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{1}}{t{{0} has its value checked in {1}.}{{code{buf}}}{{code{buf == null}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/TrackStorage.java</file>
+<line>248</line>
+</event>
+<event>
+<tag>var_assigned</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = {code{null}} return value from {1}.}{{code{truncated}}}{{code{deleteLastSegmentString}}}}}}</description>
+<line>399</line>
+</event>
+<event>
+<main>true</main>
+<tag>dereference</tag>
+<description>{CovLStrv2{{t{Dereferencing a pointer that might be {code{null}} {0} when calling {1}.}{{code{truncated}}}{{code{csv2LatLonJSON}}}}}}</description>
+<line>401</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/TrackStorage.java</file>
+<function>truewatcher.tower.TrackStorage$Track2LatLonJSON.csv2LatLonJSON(java.lang.String)</function>
+<key>4db3d1beaa864ef937780be96ae75669</key>
+<id>3</id>
+</model_ptr>
+</event>
+<extra>deleteLastSegmentString</extra>
+<subcategory>none</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Call to null-returning function</eventSetCaption>
+<eventSetCaption>Examples where return value was checked for null</eventSetCaption>
+</eventSetCaptions>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<function>truewatcher.tower.FileActivity$FileFragment.onItemSelected(android.widget.AdapterView, android.view.View, int, long)</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{position == 0}}}}}}</description>
+<line>91</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>if_end</tag>
+<description>{CovLStrv2{{t{End of if statement.}}}}</description>
+<line>91</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns {code{null}} (checked {1} out of {2} times).}{{code{getItemAtPosition}}}{0}{1}}}}</description>
+<line>92</line>
+</event>
+<event>
+<main>true</main>
+<tag>null_method_call</tag>
+<description>{CovLStrv2{{t{Calling a method on null object {0}.}{{code{parent.getItemAtPosition(position)}}}}}}</description>
+<line>92</line>
+</event>
+<extra>getItemAtPosition</extra>
+<subcategory>none</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Call to null-returning function</eventSetCaption>
+<eventSetCaption>Examples where return value was checked for null</eventSetCaption>
+</eventSetCaptions>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/PreferencesActivity.java</file>
+<function>truewatcher.tower.PreferencesActivity$PreferencesFragment.adjustApiKeys(java.lang.String)</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!mRegistry.getBool(&quot;isKeylessDistro&quot;)}}}}}}</description>
+<line>228</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!truewatcher.tower.U.arrayContains(truewatcher.tower.MyRegistry.APIS, key)}}}}}}</description>
+<line>228</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>if_end</tag>
+<description>{CovLStrv2{{t{End of if statement.}}}}</description>
+<line>228</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns {code{null}} (checked {1} out of {2} times).}{{code{findPreference}}}{1}{5}}}}</description>
+<line>233</line>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0}: }{1}}{t{{0} has its value checked in {1}.}{{code{getPreferenceManager().findPreference(key)}}}{{code{null != getPreferenceManager().findPreference(key)}}}}}}</description>
+<line>155</line>
+</event>
+<event>
+<main>true</main>
+<tag>null_method_call</tag>
+<description>{CovLStrv2{{t{Calling a method on null object {0}.}{{code{getPreferenceManager().findPreference(key)}}}}}}</description>
+<line>233</line>
+</event>
+<extra>findPreference</extra>
+<subcategory>none</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Call to null-returning function</eventSetCaption>
+<eventSetCaption>Examples where return value was checked for null</eventSetCaption>
+</eventSetCaptions>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/EditPointActivity.java</file>
+<function>truewatcher.tower.EditPointActivity$EditPointFragment.onCreateOptionsMenu(android.view.Menu, android.view.MenuInflater)</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{extractCaller().equals(this.MAP)}}}}}}</description>
+<line>100</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns {code{null}} (checked {1} out of {2} times).}{{code{findItem}}}{0}{3}}{t{ (The virtual call resolves to {0}.)}{{code{android.support.v7.view.menu.MenuBuilder.findItem}}}}}}</description>
+<line>101</line>
+</event>
+<event>
+<tag>var_assigned</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = {code{null}} return value from {1}.}{{code{actionList}}}{{code{findItem}}}}}}</description>
+<line>101</line>
+</event>
+<event>
+<main>true</main>
+<tag>null_method_call</tag>
+<description>{CovLStrv2{{t{Calling a method on null object {0}.}{{code{actionList}}}}}}</description>
+<line>102</line>
+</event>
+<extra>findItem</extra>
+<subcategory>none</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Call to null-returning function</eventSetCaption>
+<eventSetCaption>Examples where return value was checked for null</eventSetCaption>
+</eventSetCaptions>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Tests1.java</file>
+<function>truewatcher.tower.Tests1$Tests1Fragment.testFileUtilities()</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{null == exists0}}}}}}</description>
+<line>124</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{null != exists1}}}}}}</description>
+<line>128</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns {code{null}} (checked {1} out of {2} times).}{{code{getCatalog}}}{0}{1}}}}</description>
+<line>129</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.getCatalog(java.lang.String)</function>
+<key>1049b145658b0ac1cf4fde472710a6cb</key>
+<id>2</id>
+</model_ptr>
+</event>
+<event>
+<tag>var_assigned</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = {code{null}} return value from {1}.}{{code{dirFull}}}{{code{getCatalog}}}}}}</description>
+<line>129</line>
+</event>
+<event>
+<main>true</main>
+<tag>dereference</tag>
+<description>{CovLStrv2{{t{Dereferencing a pointer that might be {code{null}} {0} when calling {1}.}{{code{dirFull}}}{{code{arrayContains}}}}}}</description>
+<line>130</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.arrayContains(java.lang.String[], java.lang.String)</function>
+<key>42737a6a75e7c94862bb3603a1763e9f</key>
+<id>3</id>
+</model_ptr>
+</event>
+<extra>getCatalog</extra>
+<subcategory>none</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Call to null-returning function</eventSetCaption>
+<eventSetCaption>Examples where return value was checked for null</eventSetCaption>
+</eventSetCaptions>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/Tests1.java</file>
+<function>truewatcher.tower.Tests1$Tests1Fragment.testFileUtilities()</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{null == exists0}}}}}}</description>
+<line>124</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{null != exists1}}}}}}</description>
+<line>128</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns {code{null}} (checked {1} out of {2} times).}{{code{getCatalog}}}{1}{3}}}}</description>
+<line>131</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.getCatalog(java.lang.String, java.lang.String)</function>
+<key>0238682da5896df0e91b6e1e10099482</key>
+<id>2</id>
+</model_ptr>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{1}}{t{Assigning: {0} = return value from {1}.}{{code{catalog}}}{{code{truewatcher.tower.U.getCatalog(mStorageHelper.getMyDir(), mode)}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>80</line>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{1}}{t{{0} has its value checked in {1}.}{{code{catalog}}}{{code{catalog == null}}}}}}</description>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/FileActivity.java</file>
+<line>81</line>
+</event>
+<event>
+<tag>var_assigned</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = {code{null}} return value from {1}.}{{code{dirDat}}}{{code{getCatalog}}}}}}</description>
+<line>131</line>
+</event>
+<event>
+<main>true</main>
+<tag>dereference</tag>
+<description>{CovLStrv2{{t{Dereferencing a pointer that might be {code{null}} {0} when calling {1}.}{{code{dirDat}}}{{code{arrayContains}}}}}}</description>
+<line>132</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Users/tsubasa/Downloads/tower-master/app/src/main/java/truewatcher/tower/U.java</file>
+<function>truewatcher.tower.U.arrayContains(java.lang.String[], java.lang.String)</function>
+<key>42737a6a75e7c94862bb3603a1763e9f</key>
+<id>3</id>
+</model_ptr>
+</event>
+<extra>getCatalog</extra>
+<subcategory>none</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Call to null-returning function</eventSetCaption>
+<eventSetCaption>Examples where return value was checked for null</eventSetCaption>
+</eventSetCaptions>
+</error>
